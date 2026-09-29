@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>NHL Strelci 2026/27</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <header class="topbar">
+    <div><div class="eyebrow">NHL GOAL DRAFT</div><h1>NHL Strelci <span>2026/27</span></h1></div>
+    <div class="update-box"><span class="dot"></span><div><small>Posledná aktualizácia</small><strong id="updatedAt">načítavam…</strong></div></div>
+  </header>
+  <main>
+    <section class="hero-grid">
+      <article class="hero-card"><div class="kicker">Líder</div><div id="leaderName" class="hero-value">—</div><div id="leaderMeta" class="muted">—</div></article>
+      <article class="hero-card"><div class="kicker">Góly v lige</div><div id="leagueGoals" class="hero-value">0</div><div class="muted">88 draftovaných hráčov</div></article>
+      <article class="hero-card"><div class="kicker">Hodnota gólu</div><div class="hero-value">1 €</div><div class="muted">od každého z 10 súperov</div></article>
+      <article class="hero-card"><div class="kicker">Dnešná noc</div><div id="nightGoals" class="hero-value">0 G</div><div id="nightMeta" class="muted">bez zmeny</div></article>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab active" data-view="leaderboard">Leaderboard</button>
+      <button class="tab" data-view="teams">Tímy</button>
+      <button class="tab" data-view="daily">Dnes</button>
+      <button class="tab" data-view="history">Vývoj</button>
+      <button class="tab" data-view="rules">Pravidlá</button>
+    </nav>
+
+    <section id="leaderboard" class="view active"><div class="panel">
+      <div class="panel-head"><div><div class="kicker">Aktuálne poradie</div><h2>Góly & finančná bilancia</h2></div><div class="legend"><span class="plus">profit</span><span class="minus">mínus</span></div></div>
+      <div class="table-wrap"><table><thead><tr><th>#</th><th>Manažér</th><th>Góly</th><th>Dnes</th><th>Projection</th><th>Hrubý zisk</th><th>Strata</th><th>NET</th></tr></thead><tbody id="leaderboardBody"></tbody></table></div>
+      <p class="formula">NET = (počet manažérov × tvoje góly) − všetky góly v lige. Pri 11 manažéroch je každý gól nad ligovým priemerom hodnotný približne +11 € v NET bilancii.</p>
+    </div></section>
+
+    <section id="teams" class="view"><div id="teamGrid" class="team-grid"></div></section>
+
+    <section id="daily" class="view"><div class="panel">
+      <div class="panel-head"><div><div class="kicker">Posledná aktualizácia</div><h2>Kto skóroval</h2></div></div>
+      <div id="dailyList" class="daily-list"></div>
+    </div></section>
+
+    <section id="history" class="view"><div class="panel">
+      <div class="panel-head"><div><div class="kicker">Sezóna</div><h2>Vývoj NET bilancie</h2></div></div>
+      <div class="chart-wrap"><canvas id="historyChart" height="380"></canvas></div>
+      <p class="formula">Graf sa začne plniť po prvých denných aktualizáciách.</p>
+    </div></section>
+
+    <section id="rules" class="view"><div class="panel rules">
+      <div class="kicker">Pravidlá súťaže</div><h2>Ako sa počítajú peniaze</h2>
+      <div class="rules-grid"><div><strong>8 hráčov</strong><span>na manažéra</span></div><div><strong>11 manažérov</strong><span>88 unikátnych hráčov</span></div><div><strong>1 € / gól</strong><span>od každého súpera</span></div><div><strong>4 trejdy</strong><span>na sezónu</span></div></div>
+      <p>Počíta sa iba základná časť NHL 2026/27. Ak tvoj tím strelí gól, dostávaš 1 € od každého z ostatných 10 manažérov. Zároveň platíš 1 € za každý gól, ktorý strelí hráč ktoréhokoľvek súpera.</p>
+      <p>Pri trejde zostávajú manažérovi góly získané s pôvodným hráčom. Nový hráč začne pre daného manažéra zbierať góly až od momentu výmeny.</p>
+      <p class="source">Štatistiky: NHL Stats API · regular season only.</p>
+    </div></section>
+  </main>
+  <footer>Fan-made private league dashboard · NHL Strelci 2026/27</footer>
+  <script src="app.js"></script>
+</body>
+</html>
