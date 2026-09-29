@@ -1,0 +1,531 @@
+{
+  "name": "NHL Strelci 2026/27",
+  "season": "20262027",
+  "gameTypeId": 2,
+  "valuePerGoal": 1,
+  "currency": "EUR",
+  "rules": {
+    "regularSeasonOnly": true,
+    "maxTradesPerManager": 4,
+    "description": "Každý gól hráča zarobí jeho manažérovi 1 € od každého z ostatných manažérov."
+  },
+  "managers": [
+    {
+      "name": "DIKSO",
+      "projection": 297.8,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Connor McDavid",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Sam Reinhart",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Brandon Hagel",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Leo Carlsson",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Andrei Svechnikov",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Dylan Larkin",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Rickard Rakell",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Quinton Byfield",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "PALI",
+      "projection": 267.3,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Nathan MacKinnon",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Artemi Panarin",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Martin Necas",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Steven Stamkos",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Juraj Slafkovsky",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Travis Konecny",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Pavel Zacha",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Alexei Protas",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "ANDROS",
+      "projection": 277.3,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Kirill Kaprizov",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Jack Hughes",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Dylan Guenther",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Mikko Rantanen",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Clayton Keller",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Will Smith",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Jimmy Snuggerud",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Tom Wilson",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "DOMCO",
+      "projection": 273.4,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Cole Caufield",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Kyle Connor",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Alex DeBrincat",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Logan Cooley",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Owen Tippett",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Dylan Cozens",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Bryan Rust",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Porter Martone",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "IGOR",
+      "projection": 255.3,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Auston Matthews",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "William Nylander",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Tim Stutzle",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Logan Stankoven",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "John Tavares",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Gabriel Vilardi",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Brock Boeser",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Ivan Demidov",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "MISO",
+      "projection": 239.6,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Nikita Kucherov",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Mika Zibanejad",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Filip Forsberg",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Matthew Tkachuk",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Nick Suzuki",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Mark Stone",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Jamie Benn",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Gabriel Landeskog",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "MIKY",
+      "projection": 277.9,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Leon Draisaitl",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Cutter Gauthier",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Jake Guentzel",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Zach Hyman",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Sebastian Aho",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Nico Hischier",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Jared McCann",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Roman Kantserov",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "DOBRAK",
+      "projection": 258.5,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Macklin Celebrini",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Wyatt Johnston",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Mark Scheifele",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Morgan Geekie",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Brock Nelson",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Mitchell Marner",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Cale Makar",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Ivar Stenberg",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "ZELKIS",
+      "projection": 269.3,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Jason Robertson",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Matt Boldy",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Brayden Point",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Adrian Kempe",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Sidney Crosby",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Drake Batherson",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "John-Jason Peterka",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Adam Fantilli",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "ONDRO",
+      "projection": 270.2,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "David Pastrnak",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Tage Thompson",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Pavel Dorofeyev",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Bo Horvat",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Seth Jarvis",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Kirill Marchenko",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Dylan Holloway",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Beckett Sennecke",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    },
+    {
+      "name": "XAVIER",
+      "projection": 237.3,
+      "tradesUsed": 0,
+      "roster": [
+        {
+          "player": "Jack Eichel",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Brady Tkachuk",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Carter Verhaeghe",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Alex Tuch",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Lucas Raymond",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Alex Ovechkin",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Matt Duchene",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        },
+        {
+          "player": "Jordan Kyrou",
+          "bankedGoals": 0,
+          "goalsAtAcquisition": 0
+        }
+      ]
+    }
+  ]
+}
