@@ -1,0 +1,16 @@
+{
+  "records": [
+    {
+      "date": "2026-09-29",
+      "manager": "ONDRO",
+      "outPlayer": "Seth Jarvis",
+      "inPlayer": "Matvei Michkov",
+      "countedTrade": false,
+      "tradeNumber": null,
+      "bankedGoals": 0,
+      "incomingGoalsAtAcquisition": 0,
+      "type": "preseason_injury_replacement",
+      "note": "Pred začiatkom súťaže: zranený Seth Jarvis nahradený Matveiom Michkovom. Zmena sa neráta medzi 4 voľné trejdy."
+    }
+  ]
+}
