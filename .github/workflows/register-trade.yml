@@ -10,7 +10,10 @@ permissions:
 
 jobs:
   register:
-    if: startsWith(github.event.issue.title, '[TRADE]') && github.event.issue.user.login == 'andrejdikos-droid'
+    if: >
+      github.event.issue.user.login == 'andrejdikos-droid' &&
+      (startsWith(github.event.issue.title, '[TRADE]') ||
+       startsWith(github.event.issue.title, '[TRADE-TEST]'))
     runs-on: ubuntu-latest
 
     steps:
@@ -22,13 +25,15 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Register trade
+      - name: Validate / register trade
         run: python scripts/apply_trade.py
 
       - name: Refresh NHL stats and team totals
+        if: ${{ !startsWith(github.event.issue.title, '[TRADE-TEST]') }}
         run: python scripts/update_stats.py
 
-      - name: Commit trade
+      - name: Commit real trade
+        if: ${{ !startsWith(github.event.issue.title, '[TRADE-TEST]') }}
         run: |
           git config user.name "nhl-strelci-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -36,10 +41,20 @@ jobs:
           git commit -m "Register trade from issue #${{ github.event.issue.number }}"
           git push
 
-      - name: Close trade request
+      - name: Close real trade request
+        if: ${{ success() && !startsWith(github.event.issue.title, '[TRADE-TEST]') }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh issue close "${{ github.event.issue.number }}" \
             --repo "${{ github.repository }}" \
             --comment "✅ Trejd bol zaregistrovaný. Dashboard sa po GitHub Pages deployi automaticky aktualizuje."
+
+      - name: Close successful dry run
+        if: ${{ success() && startsWith(github.event.issue.title, '[TRADE-TEST]') }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue close "${{ github.event.issue.number }}" \
+            --repo "${{ github.repository }}" \
+            --comment "✅ DRY RUN prešiel. Zostavy, góly ani počet trejdov sa nezmenili."
