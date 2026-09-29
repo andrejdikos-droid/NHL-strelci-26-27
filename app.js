@@ -4,7 +4,7 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({
   '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
 }[c]));
 
-let league, stats, history, computed;
+let league, stats, history, trades, computed;
 
 async function loadJSON(path) {
   const r = await fetch(`${path}?v=${Date.now()}`, { cache: 'no-store' });
@@ -255,6 +255,175 @@ function renderHistory() {
   });
 }
 
+function ensureTradeUI() {
+  if (document.querySelector('[data-view="trades"]')) return;
+
+  const tabs = document.querySelector('.tabs');
+  const rulesView = document.getElementById('rules');
+
+  tabs.insertAdjacentHTML('beforeend',
+    '<button class="tab" data-view="trades">Trejdy</button>'
+  );
+
+  rulesView.insertAdjacentHTML('beforebegin', `
+    <section id="trades" class="view">
+      <div class="trade-layout">
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <div class="kicker">História výmien</div>
+              <h2>Trejdy</h2>
+            </div>
+          </div>
+          <div id="tradeHistory" class="daily-list"></div>
+        </div>
+
+        <div class="panel">
+          <div class="kicker">Admin</div>
+          <h2>Registrovať trejd</h2>
+          <p class="formula" style="margin:8px 0 18px">
+            Formulár pripraví GitHub požiadavku. Zmenu môže potvrdiť iba účet
+            <strong>andrejdikos-droid</strong>. Po potvrdení sa zostava a bilancie
+            automaticky prepočítajú.
+          </p>
+
+          <form id="tradeForm" class="trade-form">
+            <label>
+              Manažér
+              <select id="tradeManager" required></select>
+            </label>
+
+            <label>
+              OUT
+              <select id="tradeOut" required></select>
+            </label>
+
+            <label>
+              IN – presné meno NHL hráča
+              <input id="tradeIn" type="text" placeholder="napr. Timo Meier" required />
+            </label>
+
+            <label>
+              Poznámka
+              <input id="tradeNote" type="text" placeholder="voliteľné" />
+            </label>
+
+            <label class="trade-check">
+              <input id="tradeFree" type="checkbox" />
+              <span>Nerátať medzi 4 voľné trejdy</span>
+            </label>
+
+            <button class="trade-submit" type="submit">Pripraviť registráciu trejdu</button>
+          </form>
+
+          <div class="trade-warning">
+            Po kliknutí sa otvorí GitHub s pripravenou požiadavkou. Tam už iba klikneš
+            <strong>Submit new issue</strong>. Automatizácia následne trejd zapíše.
+          </div>
+        </div>
+      </div>
+    </section>
+  `);
+
+  const style = document.createElement('style');
+  style.textContent = `
+    .trade-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:13px}
+    .trade-form{display:grid;gap:13px}
+    .trade-form label{display:grid;gap:6px;color:#9fb2c4;font-size:12px;font-weight:700}
+    .trade-form input,.trade-form select{
+      width:100%;padding:12px 13px;border-radius:11px;border:1px solid #213750;
+      background:#091725;color:#f4f8ff;font:inherit;outline:none
+    }
+    .trade-form input:focus,.trade-form select:focus{border-color:#67d7ff}
+    .trade-check{display:flex!important;grid-template-columns:auto 1fr!important;align-items:center;gap:9px!important}
+    .trade-check input{width:auto}
+    .trade-submit{
+      border:0;border-radius:11px;padding:13px 15px;background:#67d7ff;color:#06111d;
+      font-weight:900;cursor:pointer
+    }
+    .trade-warning{
+      margin-top:13px;padding:12px 13px;border-radius:11px;background:#0a1727;
+      border:1px solid #213750;color:#93a8bd;font-size:12px;line-height:1.5
+    }
+    .trade-type{display:inline-flex;padding:3px 7px;border-radius:999px;font-size:10px;font-weight:900;
+      background:#16334e;color:#9bdfff;margin-left:6px}
+    .trade-type.free{background:#2a3140;color:#f5c451}
+    @media(max-width:900px){.trade-layout{grid-template-columns:1fr}}
+  `;
+  document.head.appendChild(style);
+
+  const managerSelect = document.getElementById('tradeManager');
+  const outSelect = document.getElementById('tradeOut');
+
+  managerSelect.innerHTML = league.managers
+    .map(m => `<option value="${esc(m.name)}">${esc(m.name)} · ${m.tradesUsed || 0}/4</option>`)
+    .join('');
+
+  const refreshOut = () => {
+    const manager = league.managers.find(m => m.name === managerSelect.value);
+    outSelect.innerHTML = (manager?.roster || [])
+      .map(s => `<option value="${esc(s.player)}">${esc(s.player)}</option>`)
+      .join('');
+  };
+
+  managerSelect.addEventListener('change', refreshOut);
+  refreshOut();
+
+  document.getElementById('tradeForm').addEventListener('submit', e => {
+    e.preventDefault();
+
+    const manager = managerSelect.value;
+    const outPlayer = outSelect.value;
+    const inPlayer = document.getElementById('tradeIn').value.trim();
+    const note = document.getElementById('tradeNote').value.trim();
+    const counted = !document.getElementById('tradeFree').checked;
+
+    if (!inPlayer) return;
+
+    const title = `[TRADE] ${manager}: ${outPlayer} -> ${inPlayer}`;
+    const body = [
+      `MANAGER=${manager}`,
+      `OUT=${outPlayer}`,
+      `IN=${inPlayer}`,
+      `COUNT_TRADE=${counted ? 'true' : 'false'}`,
+      `NOTE=${note || '-'}`,
+      '',
+      'Vytvorené cez NHL Strelci 2026/27 dashboard.'
+    ].join('\n');
+
+    const url =
+      'https://github.com/andrejdikos-droid/NHL-strelci-26-27/issues/new' +
+      `?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+
+    window.open(url, '_blank', 'noopener');
+  });
+}
+
+function renderTrades() {
+  const records = [...(trades?.records || [])].reverse();
+  const target = document.getElementById('tradeHistory');
+  if (!target) return;
+
+  target.innerHTML = records.length
+    ? records.map(t => `
+      <div class="daily-item">
+        <div>
+          <strong>${esc(t.manager)} · ${esc(t.outPlayer)} → ${esc(t.inPlayer)}</strong>
+          <div class="who">
+            ${esc(t.date || '')}
+            <span class="trade-type ${t.countedTrade ? '' : 'free'}">
+              ${t.countedTrade ? `TREJD ${t.tradeNumber || ''}/4` : 'MIMO 4 TREJDOV'}
+            </span>
+          </div>
+          ${t.note ? `<div class="who" style="margin-top:5px">${esc(t.note)}</div>` : ''}
+        </div>
+        <div class="daily-goals">${Number(t.bankedGoals || 0)} G</div>
+        <div class="who">banked</div>
+      </div>
+    `).join('')
+    : '<div class="empty">Zatiaľ nebol zaregistrovaný žiadny trejd.</div>';
+}
+
 function bindTabs() {
   document.querySelectorAll('.tab').forEach(b => {
     b.addEventListener('click', () => {
@@ -273,17 +442,20 @@ function bindTabs() {
 
 (async () => {
   try {
-    [league, stats, history] = await Promise.all([
+    [league, stats, history, trades] = await Promise.all([
       loadJSON('data/league.json'),
       loadJSON('data/stats.json'),
-      loadJSON('data/history.json')
+      loadJSON('data/history.json'),
+      loadJSON('data/trades.json')
     ]);
 
     computed = calculate();
+    ensureTradeUI();
     renderTop();
     renderLeaderboard();
     renderTeams();
     renderDaily();
+    renderTrades();
     bindTabs();
 
     window.addEventListener('resize', () => {
@@ -303,3 +475,4 @@ function bindTabs() {
     );
   }
 })();
+
