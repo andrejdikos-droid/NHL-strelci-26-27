@@ -107,7 +107,8 @@ def main():
         raise PermissionError(f"Only {ADMIN} may register trades.")
 
     title = issue.get("title", "")
-    if not title.startswith("[TRADE]"):
+    dry_run = title.startswith("[TRADE-TEST]")
+    if not (title.startswith("[TRADE]") or dry_run):
         raise ValueError("Issue is not a trade request.")
 
     fields = parse_body(issue.get("body", ""))
@@ -170,6 +171,38 @@ def main():
         previous_banked
         + max(0, current_out_goals - acquired_at)
     )
+
+    if dry_run:
+        summary = (
+            f"DRY RUN OK\n"
+            f"Manager: {manager_name}\n"
+            f"OUT: {out_player}\n"
+            f"IN: {in_player}\n"
+            f"Banked goals after OUT: {credited_out_goals}\n"
+            f"Incoming goals at acquisition: {current_in_goals}\n"
+            f"Trade counter would become: "
+            f"{int(manager.get('tradesUsed', 0)) + (1 if counted_trade else 0)}/"
+            f"{int(league.get('rules', {}).get('maxTradesPerManager', 4))}\n"
+            f"No files were changed."
+        )
+        print(summary)
+
+        step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
+        if step_summary:
+            with open(step_summary, "a", encoding="utf-8") as fh:
+                fh.write("## ✅ Trade dry run passed\n\n")
+                fh.write(f"- **Manager:** {manager_name}\n")
+                fh.write(f"- **OUT:** {out_player}\n")
+                fh.write(f"- **IN:** {in_player}\n")
+                fh.write(f"- **Banked goals after OUT:** {credited_out_goals}\n")
+                fh.write(f"- **Incoming goals at acquisition:** {current_in_goals}\n")
+                fh.write(
+                    f"- **Trade counter would become:** "
+                    f"{int(manager.get('tradesUsed', 0)) + (1 if counted_trade else 0)}/"
+                    f"{int(league.get('rules', {}).get('maxTradesPerManager', 4))}\n"
+                )
+                fh.write("- **Data changed:** NO\n")
+        return
 
     slot["player"] = in_player
     slot["bankedGoals"] = credited_out_goals
