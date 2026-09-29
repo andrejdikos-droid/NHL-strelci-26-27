@@ -1,3 +1,54 @@
 {
-  "snapshots": []
+  "snapshots": [
+    {
+      "date": "2026-09-29",
+      "updatedAt": "2026-09-29T09:52:10.088293+00:00",
+      "managers": {
+        "DIKSO": {
+          "goals": 0,
+          "net": 0
+        },
+        "PALI": {
+          "goals": 0,
+          "net": 0
+        },
+        "ANDROS": {
+          "goals": 0,
+          "net": 0
+        },
+        "DOMCO": {
+          "goals": 0,
+          "net": 0
+        },
+        "IGOR": {
+          "goals": 0,
+          "net": 0
+        },
+        "MISO": {
+          "goals": 0,
+          "net": 0
+        },
+        "MIKY": {
+          "goals": 0,
+          "net": 0
+        },
+        "DOBRAK": {
+          "goals": 0,
+          "net": 0
+        },
+        "ZELKIS": {
+          "goals": 0,
+          "net": 0
+        },
+        "ONDRO": {
+          "goals": 0,
+          "net": 0
+        },
+        "XAVIER": {
+          "goals": 0,
+          "net": 0
+        }
+      }
+    }
+  ]
 }
