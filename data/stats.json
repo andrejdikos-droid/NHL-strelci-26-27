@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-09-30T08:29:08.998038+00:00",
+  "updatedAt": "2026-09-30T09:00:01.842566+00:00",
   "source": "NHL Stats API",
   "players": {
     "Connor McDavid": {
@@ -341,7 +341,7 @@
       "team": "TOR",
       "shots": 5,
       "shootingPct": 0.4,
-      "deltaGoals": 2,
+      "deltaGoals": 0,
       "found": true
     },
     "Tim Stutzle": {
@@ -461,7 +461,7 @@
       "team": "VGK",
       "shots": 1,
       "shootingPct": 1.0,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Jamie Benn": {
@@ -711,7 +711,7 @@
       "team": "BOS",
       "shots": 1,
       "shootingPct": 1.0,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Adam Fantilli": {
@@ -811,7 +811,7 @@
       "team": "VGK",
       "shots": 2,
       "shootingPct": 0.5,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Brady Tkachuk": {
@@ -864,15 +864,15 @@
       "deltaGoals": 0,
       "found": false
     },
-    "Matt Duchene": {
-      "playerId": null,
-      "goals": 0,
-      "gamesPlayed": 0,
-      "team": "",
-      "shots": 0,
-      "shootingPct": null,
-      "deltaGoals": 0,
-      "found": false
+    "Vasili Podkolzin": {
+      "playerId": 8481617,
+      "goals": 2,
+      "gamesPlayed": 1,
+      "team": "EDM",
+      "shots": 7,
+      "shootingPct": 0.28571,
+      "deltaGoals": 2,
+      "found": true
     },
     "Jordan Kyrou": {
       "playerId": null,
@@ -942,7 +942,6 @@
     "Alex Tuch",
     "Lucas Raymond",
     "Alex Ovechkin",
-    "Matt Duchene",
     "Jordan Kyrou"
   ],
   "message": "OK"

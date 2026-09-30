@@ -11,6 +11,20 @@
       "incomingGoalsAtAcquisition": 0,
       "type": "preseason_injury_replacement",
       "note": "Pred začiatkom súťaže: zranený Seth Jarvis nahradený Matveiom Michkovom. Zmena sa neráta medzi 4 voľné trejdy."
+    },
+    {
+      "date": "2026-09-30",
+      "timestamp": "2026-09-30T09:00:01.576584+00:00",
+      "manager": "XAVIER",
+      "outPlayer": "Matt Duchene",
+      "inPlayer": "Vasili Podkolzin",
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 0,
+      "incomingGoalsAtAcquisition": 2,
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 3
     }
   ]
 }

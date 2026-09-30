@@ -483,7 +483,7 @@
     {
       "name": "XAVIER",
       "projection": 237.3,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Jack Eichel",
@@ -516,9 +516,9 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Matt Duchene",
+          "player": "Vasili Podkolzin",
           "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "goalsAtAcquisition": 2
         },
         {
           "player": "Jordan Kyrou",
