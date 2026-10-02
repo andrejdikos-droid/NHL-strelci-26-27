@@ -1,79 +1,4 @@
-#!/usr/bin/env python3
-import json
-import re
-import unicodedata
-import urllib.parse
-import urllib.request
-from pathlib import Path
-from datetime import datetime, timezone
-
-ROOT = Path(__file__).resolve().parents[1]
-LEAGUE_PATH = ROOT / "data" / "league.json"
-STATS_PATH = ROOT / "data" / "stats.json"
-HISTORY_PATH = ROOT / "data" / "history.json"
-
-
-def load(path, fallback):
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
-        return fallback
-
-
-def norm(text):
-    text = unicodedata.normalize("NFKD", text or "")
-    text = "".join(c for c in text if not unicodedata.combining(c))
-    text = text.lower().replace("’", "'").replace(".", "")
-    return re.sub(r"[^a-z0-9]+", " ", text).strip()
-
-
-def fetch_stats(season, game_type):
-    base = "https://api.nhle.com/stats/rest/en/skater/summary"
-    params = {
-        "isAggregate": "false",
-        "isGame": "false",
-        "start": "0",
-        "limit": "-1",
-        "sort": json.dumps(
-            [{"property": "goals", "direction": "DESC"}],
-            separators=(",", ":")
-        ),
-        "cayenneExp": f"seasonId={season} and gameTypeId={game_type}"
-    }
-
-    req = urllib.request.Request(
-        base + "?" + urllib.parse.urlencode(params),
-        headers={
-            "User-Agent": "NHL-Strelci-26-27/1.0",
-            "Accept": "application/json"
-        }
-    )
-
-    with urllib.request.urlopen(req, timeout=30) as response:
-        return json.load(response).get("data", [])
-
-
-def main():
-    league = load(LEAGUE_PATH, {})
-    previous = load(STATS_PATH, {"players": {}})
-    history = load(HISTORY_PATH, {"snapshots": []})
-
-    season = league["season"]
-    game_type = league.get("gameTypeId", 2)
-
     rows = fetch_stats(season, game_type)
-
-    by_name = {
-        norm(row.get("skaterFullName")): row
-        for row in rows
-        if row.get("skaterFullName")
-    }
-
-    by_last = {}
-    for row in rows:
-        full_name = row.get("skaterFullName", "")
-        last_name = row.get("lastName") or (full_name.split()[-1] if full_name else "")
-        by_last.setdefault(norm(last_name), []).append(row)
 
     roster_names = []
     for manager in league["managers"]:
@@ -85,16 +10,18 @@ def main():
     unmatched = []
 
     for name in roster_names:
-        match = by_name.get(norm(name))
-
-        if not match:
-            last = norm(name).split()[-1] if norm(name) else ""
-            candidates = by_last.get(last, [])
-            if len(candidates) == 1:
-                match = candidates[0]
+        match = find_player(rows, name)
 
         old = previous.get("players", {}).get(name, {})
         old_goals = int(old.get("goals", 0) or 0)
+
+        forced_id = PLAYER_ID_OVERRIDES.get(name)
+        if forced_id is not None:
+            old_player_id = int(old.get("playerId") or 0)
+            # If previous data belonged to a different namesake, discard it.
+            if old_player_id not in (0, forced_id):
+                old_goals = 0
+                old = {}
 
         if match:
             goals = int(match.get("goals", 0) or 0)
@@ -103,7 +30,7 @@ def main():
                 "playerId": match.get("playerId"),
                 "goals": goals,
                 "gamesPlayed": int(match.get("gamesPlayed", 0) or 0),
-                "team": match.get("teamAbbrevs") or "",
+                "team": match.get("teamAbbrevs") or TEAM_FALLBACKS.get(name, ""),
                 "shots": int(match.get("shots", 0) or 0),
                 "shootingPct": match.get("shootingPct"),
                 "deltaGoals": max(0, goals - old_goals),
@@ -111,10 +38,10 @@ def main():
             }
         else:
             players[name] = {
-                "playerId": None,
+                "playerId": forced_id or old.get("playerId"),
                 "goals": old_goals,
                 "gamesPlayed": int(old.get("gamesPlayed", 0) or 0),
-                "team": old.get("team", ""),
+                "team": TEAM_FALLBACKS.get(name, old.get("team", "")),
                 "shots": old.get("shots", 0),
                 "shootingPct": old.get("shootingPct"),
                 "deltaGoals": 0,
@@ -141,6 +68,8 @@ def main():
 
     n = len(league["managers"])
     value_per_goal = league.get("valuePerGoal", 1)
+
+    fix_known_history_errors(history, n, value_per_goal)
 
     team_totals = {}
 
