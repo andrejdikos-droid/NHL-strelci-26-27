@@ -14,6 +14,17 @@ TRADES_PATH = ROOT / "data" / "trades.json"
 EVENT_PATH = os.environ.get("GITHUB_EVENT_PATH")
 ADMIN = "andrejdikos-droid"
 
+PLAYER_ID_OVERRIDES = {
+    "Jason Robertson": 8480027,
+    "Jack Hughes": 8481559,
+    "Will Smith": 8484227,
+    "Sebastian Aho": 8478427,
+}
+
+NAME_ALIASES = {
+    "John-Jason Peterka": ["JJ Peterka", "J.J. Peterka"],
+}
+
 
 def norm(text):
     text = unicodedata.normalize("NFKD", text or "")
@@ -56,25 +67,23 @@ def fetch_stats(season, game_type):
 
 
 def find_player(rows, name):
-    target = norm(name)
+    forced_id = PLAYER_ID_OVERRIDES.get(name)
+    if forced_id is not None:
+        return next(
+            (row for row in rows if int(row.get("playerId") or 0) == forced_id),
+            None
+        )
+
+    target_norms = {norm(name)}
+    target_norms.update(norm(x) for x in NAME_ALIASES.get(name, []))
 
     exact = [
         row for row in rows
-        if norm(row.get("skaterFullName")) == target
+        if norm(row.get("skaterFullName")) in target_norms
     ]
+
     if len(exact) == 1:
         return exact[0]
-
-    last = target.split()[-1] if target else ""
-    candidates = []
-    for row in rows:
-        full = row.get("skaterFullName", "")
-        row_last = row.get("lastName") or (full.split()[-1] if full else "")
-        if norm(row_last) == last:
-            candidates.append(row)
-
-    if len(candidates) == 1:
-        return candidates[0]
 
     return None
 
@@ -117,135 +126,3 @@ def main():
     out_player = fields["OUT"]
     in_player = fields["IN"]
     counted_trade = fields["COUNT_TRADE"].lower() == "true"
-    note = fields.get("NOTE", "")
-    if note == "-":
-        note = ""
-
-    if norm(out_player) == norm(in_player):
-        raise ValueError("OUT and IN player cannot be the same.")
-
-    league = load(LEAGUE_PATH, {})
-    trades = load(TRADES_PATH, {"records": []})
-
-    manager = next(
-        (m for m in league.get("managers", []) if m.get("name") == manager_name),
-        None
-    )
-    if not manager:
-        raise ValueError(f"Unknown manager: {manager_name}")
-
-    slot = next(
-        (s for s in manager.get("roster", []) if norm(s.get("player")) == norm(out_player)),
-        None
-    )
-    if not slot:
-        raise ValueError(f"{out_player} is not on {manager_name}'s current roster.")
-
-    for other_manager in league.get("managers", []):
-        for other_slot in other_manager.get("roster", []):
-            if norm(other_slot.get("player")) == norm(in_player):
-                raise ValueError(
-                    f"{in_player} is already rostered by {other_manager.get('name')}."
-                )
-
-    if counted_trade and int(manager.get("tradesUsed", 0)) >= int(
-        league.get("rules", {}).get("maxTradesPerManager", 4)
-    ):
-        raise ValueError(f"{manager_name} has already used all 4 trades.")
-
-    rows = fetch_stats(
-        league["season"],
-        league.get("gameTypeId", 2)
-    )
-
-    out_row = find_player(rows, out_player)
-    in_row = find_player(rows, in_player)
-
-    current_out_goals = int(out_row.get("goals", 0) or 0) if out_row else 0
-    current_in_goals = int(in_row.get("goals", 0) or 0) if in_row else 0
-
-    previous_banked = int(slot.get("bankedGoals", 0) or 0)
-    acquired_at = int(slot.get("goalsAtAcquisition", 0) or 0)
-
-    credited_out_goals = (
-        previous_banked
-        + max(0, current_out_goals - acquired_at)
-    )
-
-    if dry_run:
-        summary = (
-            f"DRY RUN OK\n"
-            f"Manager: {manager_name}\n"
-            f"OUT: {out_player}\n"
-            f"IN: {in_player}\n"
-            f"Banked goals after OUT: {credited_out_goals}\n"
-            f"Incoming goals at acquisition: {current_in_goals}\n"
-            f"Trade counter would become: "
-            f"{int(manager.get('tradesUsed', 0)) + (1 if counted_trade else 0)}/"
-            f"{int(league.get('rules', {}).get('maxTradesPerManager', 4))}\n"
-            f"No files were changed."
-        )
-        print(summary)
-
-        step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
-        if step_summary:
-            with open(step_summary, "a", encoding="utf-8") as fh:
-                fh.write("## ✅ Trade dry run passed\n\n")
-                fh.write(f"- **Manager:** {manager_name}\n")
-                fh.write(f"- **OUT:** {out_player}\n")
-                fh.write(f"- **IN:** {in_player}\n")
-                fh.write(f"- **Banked goals after OUT:** {credited_out_goals}\n")
-                fh.write(f"- **Incoming goals at acquisition:** {current_in_goals}\n")
-                fh.write(
-                    f"- **Trade counter would become:** "
-                    f"{int(manager.get('tradesUsed', 0)) + (1 if counted_trade else 0)}/"
-                    f"{int(league.get('rules', {}).get('maxTradesPerManager', 4))}\n"
-                )
-                fh.write("- **Data changed:** NO\n")
-        return
-
-    slot["player"] = in_player
-    slot["bankedGoals"] = credited_out_goals
-    slot["goalsAtAcquisition"] = current_in_goals
-
-    trade_number = None
-    if counted_trade:
-        manager["tradesUsed"] = int(manager.get("tradesUsed", 0)) + 1
-        trade_number = manager["tradesUsed"]
-
-    now = datetime.now(timezone.utc)
-
-    trades.setdefault("records", []).append({
-        "date": now.date().isoformat(),
-        "timestamp": now.isoformat(),
-        "manager": manager_name,
-        "outPlayer": out_player,
-        "inPlayer": in_player,
-        "countedTrade": counted_trade,
-        "tradeNumber": trade_number,
-        "bankedGoals": credited_out_goals,
-        "incomingGoalsAtAcquisition": current_in_goals,
-        "type": "regular_trade" if counted_trade else "special_replacement",
-        "note": note,
-        "githubIssue": issue.get("number")
-    })
-
-    LEAGUE_PATH.write_text(
-        json.dumps(league, ensure_ascii=False, indent=2),
-        encoding="utf-8"
-    )
-
-    TRADES_PATH.write_text(
-        json.dumps(trades, ensure_ascii=False, indent=2),
-        encoding="utf-8"
-    )
-
-    print(
-        f"Registered {manager_name}: {out_player} -> {in_player}; "
-        f"counted={counted_trade}; banked={credited_out_goals}; "
-        f"incoming at acquisition={current_in_goals}"
-    )
-
-
-if __name__ == "__main__":
-    main()
