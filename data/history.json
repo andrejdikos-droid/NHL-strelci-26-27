@@ -106,97 +106,97 @@
       "managers": {
         "DIKSO": {
           "goals": 0,
-          "net": -12
+          "net": -10
         },
         "PALI": {
           "goals": 3,
-          "net": 21
+          "net": 23
         },
         "ANDROS": {
           "goals": 0,
-          "net": -12
+          "net": -10
         },
         "DOMCO": {
           "goals": 0,
-          "net": -12
+          "net": -10
         },
         "IGOR": {
           "goals": 2,
-          "net": 10
+          "net": 12
         },
         "MISO": {
           "goals": 2,
-          "net": 10
+          "net": 12
         },
         "MIKY": {
           "goals": 0,
-          "net": -12
+          "net": -10
         },
         "DOBRAK": {
           "goals": 1,
-          "net": -1
+          "net": 1
         },
         "ZELKIS": {
-          "goals": 3,
-          "net": 21
+          "goals": 1,
+          "net": 1
         },
         "ONDRO": {
           "goals": 0,
-          "net": -12
+          "net": -10
         },
         "XAVIER": {
           "goals": 1,
-          "net": -1
+          "net": 1
         }
       }
     },
     {
       "date": "2026-10-02",
-      "updatedAt": "2026-10-02T06:54:48.822282+00:00",
+      "updatedAt": "2026-10-02T07:06:09.483030+00:00",
       "managers": {
         "DIKSO": {
           "goals": 1,
-          "net": -17
+          "net": -15
         },
         "PALI": {
           "goals": 3,
-          "net": 5
+          "net": 7
         },
         "ANDROS": {
           "goals": 6,
-          "net": 38
+          "net": 40
         },
         "DOMCO": {
           "goals": 0,
-          "net": -28
+          "net": -26
         },
         "IGOR": {
           "goals": 3,
-          "net": 5
+          "net": 7
         },
         "MISO": {
           "goals": 5,
-          "net": 27
+          "net": 29
         },
         "MIKY": {
           "goals": 2,
-          "net": -6
+          "net": -4
         },
         "DOBRAK": {
           "goals": 1,
-          "net": -17
+          "net": -15
         },
         "ZELKIS": {
-          "goals": 4,
-          "net": 16
+          "goals": 2,
+          "net": -4
         },
         "ONDRO": {
           "goals": 1,
-          "net": -17
+          "net": -15
         },
         "XAVIER": {
           "goals": 2,
-          "net": -6
+          "net": -4
         }
       }
     }

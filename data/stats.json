@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-10-02T06:54:48.822282+00:00",
+  "updatedAt": "2026-10-02T07:06:09.483030+00:00",
   "source": "NHL Stats API",
   "players": {
     "Connor McDavid": {
@@ -11,7 +11,7 @@
       "team": "EDM",
       "shots": 3,
       "shootingPct": 0.33333,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Sam Reinhart": {
@@ -171,7 +171,7 @@
       "team": "MIN",
       "shots": 3,
       "shootingPct": 0.33333,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Jack Hughes": {
@@ -181,7 +181,7 @@
       "team": "NJD",
       "shots": 5,
       "shootingPct": 0.2,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Dylan Guenther": {
@@ -191,7 +191,7 @@
       "team": "UTA",
       "shots": 5,
       "shootingPct": 0.4,
-      "deltaGoals": 2,
+      "deltaGoals": 0,
       "found": true
     },
     "Mikko Rantanen": {
@@ -221,7 +221,7 @@
       "team": "SJS",
       "shots": 3,
       "shootingPct": 0.66666,
-      "deltaGoals": 2,
+      "deltaGoals": 0,
       "found": true
     },
     "Jimmy Snuggerud": {
@@ -391,7 +391,7 @@
       "team": "VAN",
       "shots": 3,
       "shootingPct": 0.33333,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Ivan Demidov": {
@@ -411,7 +411,7 @@
       "team": "TBL",
       "shots": 1,
       "shootingPct": 1.0,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Mika Zibanejad": {
@@ -421,7 +421,7 @@
       "team": "NYR",
       "shots": 5,
       "shootingPct": 0.2,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Filip Forsberg": {
@@ -441,7 +441,7 @@
       "team": "FLA",
       "shots": 4,
       "shootingPct": 0.25,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Nick Suzuki": {
@@ -491,7 +491,7 @@
       "team": "EDM",
       "shots": 10,
       "shootingPct": 0.2,
-      "deltaGoals": 2,
+      "deltaGoals": 0,
       "found": true
     },
     "Cutter Gauthier": {
@@ -622,7 +622,7 @@
       "shots": 4,
       "shootingPct": 0.0,
       "deltaGoals": 0,
-      "found": true
+      "found": false
     },
     "Cale Makar": {
       "playerId": 8480069,
@@ -645,14 +645,14 @@
       "found": true
     },
     "Jason Robertson": {
-      "playerId": 8481582,
-      "goals": 2,
-      "gamesPlayed": 1,
-      "team": "PIT",
-      "shots": 4,
-      "shootingPct": 0.5,
+      "playerId": 8480027,
+      "goals": 0,
+      "gamesPlayed": 0,
+      "team": "DAL",
+      "shots": 0,
+      "shootingPct": null,
       "deltaGoals": 0,
-      "found": true
+      "found": false
     },
     "Matt Boldy": {
       "playerId": 8481557,
@@ -721,7 +721,7 @@
       "team": "CBJ",
       "shots": 2,
       "shootingPct": 0.5,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "David Pastrnak": {
@@ -751,7 +751,7 @@
       "team": "NYR",
       "shots": 10,
       "shootingPct": 0.1,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Bo Horvat": {
@@ -871,8 +871,8 @@
       "team": "EDM",
       "shots": 11,
       "shootingPct": 0.27272,
-      "deltaGoals": 1,
-      "found": true
+      "deltaGoals": 0,
+      "found": false
     },
     "Jordan Kyrou": {
       "playerId": null,
@@ -902,12 +902,15 @@
     "Cutter Gauthier",
     "Wyatt Johnston",
     "Mark Scheifele",
+    "Mitchell Marner",
+    "Jason Robertson",
     "Drake Batherson",
     "Dylan Holloway",
     "Beckett Sennecke",
     "Alex Tuch",
     "Lucas Raymond",
     "Alex Ovechkin",
+    "Vasili Podkolzin",
     "Jordan Kyrou"
   ],
   "message": "OK"
