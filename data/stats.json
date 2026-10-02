@@ -1,8 +1,8 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-10-02T07:06:09.483030+00:00",
-  "source": "NHL Stats API",
+  "updatedAt": "2026-10-02T07:24:50.346153+00:00",
+  "source": "NHL Stats API · playerId locked",
   "players": {
     "Connor McDavid": {
       "playerId": 8478402,
@@ -35,7 +35,7 @@
       "found": true
     },
     "Leo Carlsson": {
-      "playerId": null,
+      "playerId": 8484153,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -55,7 +55,7 @@
       "found": true
     },
     "Dylan Larkin": {
-      "playerId": null,
+      "playerId": 8477946,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -155,7 +155,7 @@
       "found": true
     },
     "Alexei Protas": {
-      "playerId": null,
+      "playerId": 8481656,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -195,7 +195,7 @@
       "found": true
     },
     "Mikko Rantanen": {
-      "playerId": null,
+      "playerId": 8478420,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -225,7 +225,7 @@
       "found": true
     },
     "Jimmy Snuggerud": {
-      "playerId": null,
+      "playerId": 8483516,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -235,7 +235,7 @@
       "found": false
     },
     "Tom Wilson": {
-      "playerId": null,
+      "playerId": 8476880,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -255,7 +255,7 @@
       "found": true
     },
     "Kyle Connor": {
-      "playerId": null,
+      "playerId": 8478398,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -265,7 +265,7 @@
       "found": false
     },
     "Alex DeBrincat": {
-      "playerId": null,
+      "playerId": 8479337,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -295,7 +295,7 @@
       "found": true
     },
     "Dylan Cozens": {
-      "playerId": null,
+      "playerId": 8481528,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -305,7 +305,7 @@
       "found": false
     },
     "Bryan Rust": {
-      "playerId": null,
+      "playerId": 8475810,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -345,7 +345,7 @@
       "found": true
     },
     "Tim Stutzle": {
-      "playerId": null,
+      "playerId": 8482116,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -375,7 +375,7 @@
       "found": true
     },
     "Gabriel Vilardi": {
-      "playerId": null,
+      "playerId": 8480014,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -465,7 +465,7 @@
       "found": true
     },
     "Jamie Benn": {
-      "playerId": null,
+      "playerId": 8473994,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -495,7 +495,7 @@
       "found": true
     },
     "Cutter Gauthier": {
-      "playerId": null,
+      "playerId": 8483445,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -575,7 +575,7 @@
       "found": true
     },
     "Wyatt Johnston": {
-      "playerId": null,
+      "playerId": 8482740,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -585,7 +585,7 @@
       "found": false
     },
     "Mark Scheifele": {
-      "playerId": null,
+      "playerId": 8476460,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -622,7 +622,7 @@
       "shots": 4,
       "shootingPct": 0.0,
       "deltaGoals": 0,
-      "found": false
+      "found": true
     },
     "Cale Makar": {
       "playerId": 8480069,
@@ -695,7 +695,7 @@
       "found": true
     },
     "Drake Batherson": {
-      "playerId": null,
+      "playerId": 8480208,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -785,7 +785,7 @@
       "found": true
     },
     "Dylan Holloway": {
-      "playerId": null,
+      "playerId": 8482077,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -795,7 +795,7 @@
       "found": false
     },
     "Beckett Sennecke": {
-      "playerId": null,
+      "playerId": 8484762,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -835,7 +835,7 @@
       "found": true
     },
     "Alex Tuch": {
-      "playerId": null,
+      "playerId": 8477949,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -845,7 +845,7 @@
       "found": false
     },
     "Lucas Raymond": {
-      "playerId": null,
+      "playerId": 8482078,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -855,7 +855,7 @@
       "found": false
     },
     "Alex Ovechkin": {
-      "playerId": null,
+      "playerId": 8471214,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -872,10 +872,10 @@
       "shots": 11,
       "shootingPct": 0.27272,
       "deltaGoals": 0,
-      "found": false
+      "found": true
     },
     "Jordan Kyrou": {
-      "playerId": null,
+      "playerId": 8479385,
       "goals": 0,
       "gamesPlayed": 0,
       "team": "",
@@ -902,7 +902,6 @@
     "Cutter Gauthier",
     "Wyatt Johnston",
     "Mark Scheifele",
-    "Mitchell Marner",
     "Jason Robertson",
     "Drake Batherson",
     "Dylan Holloway",
@@ -910,7 +909,6 @@
     "Alex Tuch",
     "Lucas Raymond",
     "Alex Ovechkin",
-    "Vasili Podkolzin",
     "Jordan Kyrou"
   ],
   "message": "OK"
