@@ -29,7 +29,12 @@ function slotContribution(slot) {
 }
 
 function slotDaily(slot) {
-  return playerStat(slot.player).deltaGoals || 0;
+  const p = playerStat(slot.player);
+  const current = p.goals || 0;
+  const acquisitionFloor = slot.goalsAtAcquisition || 0;
+  const eligibleSeasonGoals = Math.max(0, current - acquisitionFloor);
+
+  return Math.min(p.deltaGoals || 0, eligibleSeasonGoals);
 }
 
 function calculate() {
@@ -131,7 +136,7 @@ function renderTeams() {
               </div>
             </div>
             <div class="player-g">${credited} G</div>
-            <div class="player-delta">${p.deltaGoals ? `+${p.deltaGoals}` : '—'}</div>
+            <div class="player-delta">${slotDaily(slot) ? `+${slotDaily(slot)}` : '—'}</div>
           </div>
         `;
       }).join('')}
@@ -145,12 +150,14 @@ function renderDaily() {
   league.managers.forEach(m => {
     m.roster.forEach(slot => {
       const p = playerStat(slot.player);
-      if ((p.deltaGoals || 0) > 0) {
+      const creditedToday = slotDaily(slot);
+
+      if (creditedToday > 0) {
         items.push({
           name: slot.player,
           manager: m.name,
           team: p.team,
-          goals: p.deltaGoals
+          goals: creditedToday
         });
       }
     });
@@ -475,4 +482,3 @@ function bindTabs() {
     );
   }
 })();
-
