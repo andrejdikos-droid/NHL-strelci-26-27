@@ -17,41 +17,49 @@
       "roster": [
         {
           "player": "Connor McDavid",
+          "playerId": 8478402,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Sam Reinhart",
+          "playerId": 8477933,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Brandon Hagel",
+          "playerId": 8479542,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Leo Carlsson",
+          "playerId": 8484153,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Andrei Svechnikov",
+          "playerId": 8480830,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Dylan Larkin",
+          "playerId": 8477946,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Rickard Rakell",
+          "playerId": 8476483,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Quinton Byfield",
+          "playerId": 8482124,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -64,41 +72,49 @@
       "roster": [
         {
           "player": "Nathan MacKinnon",
+          "playerId": 8477492,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Artemi Panarin",
+          "playerId": 8478550,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Martin Necas",
+          "playerId": 8480039,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Steven Stamkos",
+          "playerId": 8474564,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Juraj Slafkovsky",
+          "playerId": 8483515,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Travis Konecny",
+          "playerId": 8478439,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Pavel Zacha",
+          "playerId": 8478401,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Alexei Protas",
+          "playerId": 8481656,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -111,41 +127,49 @@
       "roster": [
         {
           "player": "Kirill Kaprizov",
+          "playerId": 8478864,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Jack Hughes",
+          "playerId": 8481559,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Dylan Guenther",
+          "playerId": 8482699,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Mikko Rantanen",
+          "playerId": 8478420,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Clayton Keller",
+          "playerId": 8479343,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Will Smith",
+          "playerId": 8484227,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Jimmy Snuggerud",
+          "playerId": 8483516,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Tom Wilson",
+          "playerId": 8476880,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -158,41 +182,49 @@
       "roster": [
         {
           "player": "Cole Caufield",
+          "playerId": 8481540,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Kyle Connor",
+          "playerId": 8478398,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Alex DeBrincat",
+          "playerId": 8479337,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Logan Cooley",
+          "playerId": 8483431,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Owen Tippett",
+          "playerId": 8480015,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Dylan Cozens",
+          "playerId": 8481528,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Bryan Rust",
+          "playerId": 8475810,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Porter Martone",
+          "playerId": 8485406,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -205,41 +237,49 @@
       "roster": [
         {
           "player": "Auston Matthews",
+          "playerId": 8479318,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "William Nylander",
+          "playerId": 8477939,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Tim Stutzle",
+          "playerId": 8482116,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Logan Stankoven",
+          "playerId": 8482702,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "John Tavares",
+          "playerId": 8475166,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Gabriel Vilardi",
+          "playerId": 8480014,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Brock Boeser",
+          "playerId": 8478444,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Ivan Demidov",
+          "playerId": 8484984,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -252,41 +292,49 @@
       "roster": [
         {
           "player": "Nikita Kucherov",
+          "playerId": 8476453,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Mika Zibanejad",
+          "playerId": 8476459,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Filip Forsberg",
+          "playerId": 8476887,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Matthew Tkachuk",
+          "playerId": 8479314,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Nick Suzuki",
+          "playerId": 8480018,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Mark Stone",
+          "playerId": 8475913,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Jamie Benn",
+          "playerId": 8473994,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Gabriel Landeskog",
+          "playerId": 8476455,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -299,41 +347,49 @@
       "roster": [
         {
           "player": "Leon Draisaitl",
+          "playerId": 8477934,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Cutter Gauthier",
+          "playerId": 8483445,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Jake Guentzel",
+          "playerId": 8477404,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Zach Hyman",
+          "playerId": 8475786,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Sebastian Aho",
+          "playerId": 8478427,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Nico Hischier",
+          "playerId": 8480002,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Jared McCann",
+          "playerId": 8477955,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Roman Kantserov",
+          "playerId": 8484390,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -346,41 +402,49 @@
       "roster": [
         {
           "player": "Macklin Celebrini",
+          "playerId": 8484801,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Wyatt Johnston",
+          "playerId": 8482740,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Mark Scheifele",
+          "playerId": 8476460,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Morgan Geekie",
+          "playerId": 8479987,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Brock Nelson",
+          "playerId": 8475754,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Mitchell Marner",
+          "playerId": 8478483,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Cale Makar",
+          "playerId": 8480069,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Ivar Stenberg",
+          "playerId": 8486103,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -393,41 +457,49 @@
       "roster": [
         {
           "player": "Jason Robertson",
+          "playerId": 8480027,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Matt Boldy",
+          "playerId": 8481557,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Brayden Point",
+          "playerId": 8478010,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Adrian Kempe",
+          "playerId": 8477960,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Sidney Crosby",
+          "playerId": 8471675,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Drake Batherson",
+          "playerId": 8480208,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "John-Jason Peterka",
+          "playerId": 8482175,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Adam Fantilli",
+          "playerId": 8484166,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -440,41 +512,49 @@
       "roster": [
         {
           "player": "David Pastrnak",
+          "playerId": 8477956,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Tage Thompson",
+          "playerId": 8479420,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Pavel Dorofeyev",
+          "playerId": 8481604,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Bo Horvat",
+          "playerId": 8477500,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Matvei Michkov",
+          "playerId": 8484387,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Kirill Marchenko",
+          "playerId": 8480893,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Dylan Holloway",
+          "playerId": 8482077,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Beckett Sennecke",
+          "playerId": 8484762,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
@@ -487,41 +567,49 @@
       "roster": [
         {
           "player": "Jack Eichel",
+          "playerId": 8478403,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Brady Tkachuk",
+          "playerId": 8480801,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Carter Verhaeghe",
+          "playerId": 8477409,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Alex Tuch",
+          "playerId": 8477949,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Lucas Raymond",
+          "playerId": 8482078,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Alex Ovechkin",
+          "playerId": 8471214,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
         {
           "player": "Vasili Podkolzin",
+          "playerId": 8481617,
           "bankedGoals": 0,
           "goalsAtAcquisition": 2
         },
         {
           "player": "Jordan Kyrou",
+          "playerId": 8479385,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
