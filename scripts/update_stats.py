@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 import json
-import re
-import unicodedata
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -12,38 +10,12 @@ LEAGUE_PATH = ROOT / "data" / "league.json"
 STATS_PATH = ROOT / "data" / "stats.json"
 HISTORY_PATH = ROOT / "data" / "history.json"
 
-# Hráči s menovcami v NHL: pri nich používame presné NHL player ID.
-PLAYER_ID_OVERRIDES = {
-    "Jason Robertson": 8480027,  # DAL
-    "Jack Hughes": 8481559,      # NJD
-    "Will Smith": 8484227,       # SJS
-    "Sebastian Aho": 8478427,    # CAR
-}
-
-NAME_ALIASES = {
-    "John-Jason Peterka": ["JJ Peterka", "J.J. Peterka"],
-}
-
-TEAM_FALLBACKS = {
-    "Jason Robertson": "DAL",
-    "Jack Hughes": "NJD",
-    "Will Smith": "SJS",
-    "Sebastian Aho": "CAR",
-}
-
 
 def load(path, fallback):
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except Exception:
         return fallback
-
-
-def norm(text):
-    text = unicodedata.normalize("NFKD", text or "")
-    text = "".join(c for c in text if not unicodedata.combining(c))
-    text = text.lower().replace("’", "'").replace(".", "")
-    return re.sub(r"[^a-z0-9]+", " ", text).strip()
 
 
 def fetch_stats(season, game_type):
@@ -59,48 +31,35 @@ def fetch_stats(season, game_type):
         ),
         "cayenneExp": f"seasonId={season} and gameTypeId={game_type}"
     }
-
     req = urllib.request.Request(
         base + "?" + urllib.parse.urlencode(params),
-        headers={
-            "User-Agent": "NHL-Strelci-26-27/1.0",
-            "Accept": "application/json"
-        }
+        headers={"User-Agent":"NHL-Strelci-26-27/2.0","Accept":"application/json"}
     )
-
     with urllib.request.urlopen(req, timeout=30) as response:
         return json.load(response).get("data", [])
 
 
-def find_player(rows, name):
-    forced_id = PLAYER_ID_OVERRIDES.get(name)
+def validate_league(league):
+    slots = [s for m in league.get("managers", []) for s in m.get("roster", [])]
+    expected = len(league.get("managers", [])) * 8
 
-    if forced_id is not None:
-        for row in rows:
-            if int(row.get("playerId") or 0) == forced_id:
-                return row
-        return None
+    if len(slots) != expected:
+        raise ValueError(f"Roster integrity error: expected {expected} slots, got {len(slots)}.")
 
-    target_norms = {norm(name)}
-    target_norms.update(norm(x) for x in NAME_ALIASES.get(name, []))
+    missing = [s.get("player") for s in slots if not s.get("playerId")]
+    if missing:
+        raise ValueError("Missing playerId for: " + ", ".join(missing))
 
-    exact = [
-        row for row in rows
-        if norm(row.get("skaterFullName")) in target_norms
-    ]
-
-    # Ak existujú dvaja hráči s rovnakým menom, nikdy nevyberaj náhodne.
-    if len(exact) == 1:
-        return exact[0]
-
-    return None
+    ids = [int(s["playerId"]) for s in slots]
+    if len(ids) != len(set(ids)):
+        duplicates = sorted({x for x in ids if ids.count(x) > 1})
+        raise ValueError(f"Duplicate NHL playerId in league: {duplicates}")
 
 
 def fix_known_history_errors(history, n, value_per_goal):
-    # Nick Robertson (PIT) bol omylom pripísaný Jasonovi Robertsonovi (DAL).
-    # Oprava je idempotentná: zmení len presne známe chybné hodnoty.
+    # Historical cleanup from before full player-ID locking.
     known = {
-        "2026-10-01": (3, 1),
+        "2026-10-01": (3, 1),  # ZELKIS: Nick Robertson wrongly counted as Jason
         "2026-10-02": (4, 2),
     }
 
@@ -112,13 +71,11 @@ def fix_known_history_errors(history, n, value_per_goal):
         wrong, correct = known[date]
         managers = snap.get("managers", {})
         zelkis = managers.get("ZELKIS")
-
         if not zelkis or int(zelkis.get("goals", 0)) != wrong:
             continue
 
         zelkis["goals"] = correct
         league_total = sum(int(v.get("goals", 0)) for v in managers.values())
-
         for data in managers.values():
             goals = int(data.get("goals", 0))
             data["net"] = (n * goals - league_total) * value_per_goal
@@ -129,60 +86,62 @@ def main():
     previous = load(STATS_PATH, {"players": {}})
     history = load(HISTORY_PATH, {"snapshots": []})
 
+    validate_league(league)
+
     season = league["season"]
     game_type = league.get("gameTypeId", 2)
-
     rows = fetch_stats(season, game_type)
 
-    roster_names = []
-    for manager in league["managers"]:
-        for slot in manager["roster"]:
-            if slot["player"] not in roster_names:
-                roster_names.append(slot["player"])
+    # CRITICAL: match NHL data only by immutable NHL playerId, never by name.
+    by_id = {
+        int(row["playerId"]): row
+        for row in rows
+        if row.get("playerId") is not None
+    }
 
     players = {}
     unmatched = []
 
-    for name in roster_names:
-        match = find_player(rows, name)
+    for manager in league["managers"]:
+        for slot in manager["roster"]:
+            name = slot["player"]
+            player_id = int(slot["playerId"])
+            match = by_id.get(player_id)
 
-        old = previous.get("players", {}).get(name, {})
-        old_goals = int(old.get("goals", 0) or 0)
+            old = previous.get("players", {}).get(name, {})
+            old_id = int(old.get("playerId") or 0)
 
-        forced_id = PLAYER_ID_OVERRIDES.get(name)
-
-        # Ak boli historicky uložené dáta menovca s iným ID, zahodíme ich.
-        if forced_id is not None:
-            old_player_id = int(old.get("playerId") or 0)
-            if old_player_id not in (0, forced_id):
+            # Never carry stats forward from a different NHL identity.
+            if old_id not in (0, player_id):
                 old = {}
-                old_goals = 0
+                old_id = 0
 
-        if match:
-            goals = int(match.get("goals", 0) or 0)
+            old_goals = int(old.get("goals", 0) or 0)
 
-            players[name] = {
-                "playerId": match.get("playerId"),
-                "goals": goals,
-                "gamesPlayed": int(match.get("gamesPlayed", 0) or 0),
-                "team": match.get("teamAbbrevs") or TEAM_FALLBACKS.get(name, ""),
-                "shots": int(match.get("shots", 0) or 0),
-                "shootingPct": match.get("shootingPct"),
-                "deltaGoals": max(0, goals - old_goals),
-                "found": True
-            }
-        else:
-            players[name] = {
-                "playerId": forced_id or old.get("playerId"),
-                "goals": old_goals,
-                "gamesPlayed": int(old.get("gamesPlayed", 0) or 0),
-                "team": TEAM_FALLBACKS.get(name, old.get("team", "")),
-                "shots": old.get("shots", 0),
-                "shootingPct": old.get("shootingPct"),
-                "deltaGoals": 0,
-                "found": False
-            }
-            unmatched.append(name)
+            if match:
+                goals = int(match.get("goals", 0) or 0)
+                players[name] = {
+                    "playerId": player_id,
+                    "goals": goals,
+                    "gamesPlayed": int(match.get("gamesPlayed", 0) or 0),
+                    "team": match.get("teamAbbrevs") or old.get("team", ""),
+                    "shots": int(match.get("shots", 0) or 0),
+                    "shootingPct": match.get("shootingPct"),
+                    "deltaGoals": max(0, goals - old_goals),
+                    "found": True
+                }
+            else:
+                players[name] = {
+                    "playerId": player_id,
+                    "goals": old_goals,
+                    "gamesPlayed": int(old.get("gamesPlayed", 0) or 0),
+                    "team": old.get("team", ""),
+                    "shots": old.get("shots", 0),
+                    "shootingPct": old.get("shootingPct"),
+                    "deltaGoals": 0,
+                    "found": False
+                }
+                unmatched.append(name)
 
     now = datetime.now(timezone.utc).isoformat()
 
@@ -190,12 +149,11 @@ def main():
         "season": season,
         "gameTypeId": game_type,
         "updatedAt": now,
-        "source": "NHL Stats API",
+        "source": "NHL Stats API · playerId locked",
         "players": players,
         "unmatchedPlayers": unmatched,
         "message": "OK" if rows else "NHL API zatiaľ nevrátilo regular-season dáta."
     }
-
     STATS_PATH.write_text(
         json.dumps(stats_out, ensure_ascii=False, indent=2),
         encoding="utf-8"
@@ -203,30 +161,20 @@ def main():
 
     n = len(league["managers"])
     value_per_goal = league.get("valuePerGoal", 1)
-
-    # Oprav staré snapshoty pred zapísaním dnešného.
     fix_known_history_errors(history, n, value_per_goal)
 
     team_totals = {}
-
     for manager in league["managers"]:
         goals = 0
-
         for slot in manager["roster"]:
             current = int(players.get(slot["player"], {}).get("goals", 0) or 0)
-
             goals += (
                 int(slot.get("bankedGoals", 0) or 0)
-                + max(
-                    0,
-                    current - int(slot.get("goalsAtAcquisition", 0) or 0)
-                )
+                + max(0, current - int(slot.get("goalsAtAcquisition", 0) or 0))
             )
-
         team_totals[manager["name"]] = goals
 
     league_total = sum(team_totals.values())
-
     snapshot = {
         "date": datetime.now(timezone.utc).date().isoformat(),
         "updatedAt": now,
@@ -240,7 +188,6 @@ def main():
     }
 
     snapshots = history.setdefault("snapshots", [])
-
     if snapshots and snapshots[-1].get("date") == snapshot["date"]:
         snapshots[-1] = snapshot
     else:
@@ -252,7 +199,7 @@ def main():
     )
 
     print(
-        f"Updated {len(players)} drafted players; "
+        f"ID-LOCK update: {len(players)} players; "
         f"NHL rows={len(rows)}; unmatched={len(unmatched)}"
     )
 
