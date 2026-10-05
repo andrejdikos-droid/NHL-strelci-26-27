@@ -25,6 +25,22 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 3
+    },
+    {
+      "date": "2026-10-05",
+      "timestamp": "2026-10-05T21:31:41.339607+00:00",
+      "manager": "MISO",
+      "outPlayer": "Jamie Benn",
+      "outPlayerId": 8473994,
+      "inPlayer": "Nick Schmaltz",
+      "inPlayerId": 8477951,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 0,
+      "incomingGoalsAtAcquisition": 4,
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 5
     }
   ]
 }

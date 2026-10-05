@@ -288,7 +288,7 @@
     {
       "name": "MISO",
       "projection": 239.6,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Nikita Kucherov",
@@ -327,10 +327,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Jamie Benn",
-          "playerId": 8473994,
+          "player": "Nick Schmaltz",
+          "playerId": 8477951,
           "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "goalsAtAcquisition": 4
         },
         {
           "player": "Gabriel Landeskog",

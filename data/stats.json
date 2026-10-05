@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-10-05T08:30:27.306261+00:00",
+  "updatedAt": "2026-10-05T21:31:42.243110+00:00",
   "source": "NHL Stats API · playerId locked · nightly goals from play-by-play",
   "nightGameDate": "2026-10-04",
   "nightGameIds": [
@@ -47,8 +47,8 @@
       "goals": 1,
       "gamesPlayed": 2,
       "team": "ANA",
-      "shots": 2,
-      "shootingPct": 0.5,
+      "shots": 1,
+      "shootingPct": 1.0,
       "deltaGoals": 0,
       "found": true
     },
@@ -472,14 +472,14 @@
       "deltaGoals": 0,
       "found": true
     },
-    "Jamie Benn": {
-      "playerId": 8473994,
-      "goals": 0,
-      "gamesPlayed": 2,
-      "team": "DAL",
-      "shots": 2,
-      "shootingPct": 0.0,
-      "deltaGoals": 0,
+    "Nick Schmaltz": {
+      "playerId": 8477951,
+      "goals": 4,
+      "gamesPlayed": 3,
+      "team": "UTA",
+      "shots": 13,
+      "shootingPct": 0.30769,
+      "deltaGoals": 1,
       "found": true
     },
     "Gabriel Landeskog": {
@@ -497,8 +497,8 @@
       "goals": 3,
       "gamesPlayed": 3,
       "team": "EDM",
-      "shots": 15,
-      "shootingPct": 0.2,
+      "shots": 16,
+      "shootingPct": 0.1875,
       "deltaGoals": 0,
       "found": true
     },
