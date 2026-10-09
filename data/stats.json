@@ -1,13 +1,20 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-10-08T08:29:44.846678+00:00",
+  "updatedAt": "2026-10-09T06:11:50.737508+00:00",
   "source": "NHL Stats API · playerId locked · nightly goals from play-by-play",
-  "nightGameDate": "2026-10-07",
+  "nightGameDate": "2026-10-08",
   "nightGameIds": [
-    2026020053,
-    2026020054,
-    2026020055
+    2026020056,
+    2026020057,
+    2026020058,
+    2026020059,
+    2026020060,
+    2026020061,
+    2026020062,
+    2026020063,
+    2026020064,
+    2026020065
   ],
   "players": {
     "Connor McDavid": {
@@ -17,7 +24,7 @@
       "team": "EDM",
       "shots": 8,
       "shootingPct": 0.375,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Sam Reinhart": {
@@ -33,10 +40,10 @@
     "Brandon Hagel": {
       "playerId": 8479542,
       "goals": 1,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "TBL",
-      "shots": 17,
-      "shootingPct": 0.05882,
+      "shots": 20,
+      "shootingPct": 0.05,
       "deltaGoals": 0,
       "found": true
     },
@@ -52,12 +59,12 @@
     },
     "Andrei Svechnikov": {
       "playerId": 8480830,
-      "goals": 1,
-      "gamesPlayed": 4,
+      "goals": 3,
+      "gamesPlayed": 5,
       "team": "CAR",
-      "shots": 15,
-      "shootingPct": 0.06666,
-      "deltaGoals": 0,
+      "shots": 19,
+      "shootingPct": 0.15789,
+      "deltaGoals": 2,
       "found": true
     },
     "Dylan Larkin": {
@@ -92,12 +99,12 @@
     },
     "Nathan MacKinnon": {
       "playerId": 8477492,
-      "goals": 2,
-      "gamesPlayed": 3,
+      "goals": 3,
+      "gamesPlayed": 4,
       "team": "COL",
-      "shots": 13,
-      "shootingPct": 0.15384,
-      "deltaGoals": 0,
+      "shots": 15,
+      "shootingPct": 0.2,
+      "deltaGoals": 1,
       "found": true
     },
     "Artemi Panarin": {
@@ -113,39 +120,39 @@
     "Martin Necas": {
       "playerId": 8480039,
       "goals": 2,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "COL",
-      "shots": 11,
-      "shootingPct": 0.18181,
+      "shots": 13,
+      "shootingPct": 0.15384,
       "deltaGoals": 0,
       "found": true
     },
     "Steven Stamkos": {
       "playerId": 8474564,
       "goals": 3,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "NSH",
-      "shots": 8,
-      "shootingPct": 0.375,
+      "shots": 10,
+      "shootingPct": 0.3,
       "deltaGoals": 0,
       "found": true
     },
     "Juraj Slafkovsky": {
       "playerId": 8483515,
       "goals": 1,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "MTL",
-      "shots": 5,
-      "shootingPct": 0.2,
+      "shots": 10,
+      "shootingPct": 0.1,
       "deltaGoals": 0,
       "found": true
     },
     "Travis Konecny": {
       "playerId": 8478439,
       "goals": 0,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "PHI",
-      "shots": 6,
+      "shots": 8,
       "shootingPct": 0.0,
       "deltaGoals": 0,
       "found": true
@@ -153,9 +160,9 @@
     "Pavel Zacha": {
       "playerId": 8478401,
       "goals": 0,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "BOS",
-      "shots": 8,
+      "shots": 9,
       "shootingPct": 0.0,
       "deltaGoals": 0,
       "found": true
@@ -173,7 +180,7 @@
     "Kirill Kaprizov": {
       "playerId": 8478864,
       "goals": 3,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "MIN",
       "shots": 9,
       "shootingPct": 0.33333,
@@ -193,7 +200,7 @@
     "Dylan Guenther": {
       "playerId": 8482699,
       "goals": 3,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "UTA",
       "shots": 17,
       "shootingPct": 0.17647,
@@ -202,41 +209,41 @@
     },
     "Mikko Rantanen": {
       "playerId": 8478420,
-      "goals": 1,
-      "gamesPlayed": 3,
+      "goals": 2,
+      "gamesPlayed": 4,
       "team": "DAL",
-      "shots": 7,
-      "shootingPct": 0.14285,
-      "deltaGoals": 0,
+      "shots": 9,
+      "shootingPct": 0.22222,
+      "deltaGoals": 1,
       "found": true
     },
     "Clayton Keller": {
       "playerId": 8479343,
       "goals": 1,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "UTA",
-      "shots": 11,
-      "shootingPct": 0.0909,
+      "shots": 15,
+      "shootingPct": 0.06666,
       "deltaGoals": 0,
       "found": true
     },
     "Will Smith": {
       "playerId": 8484227,
       "goals": 2,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "SJS",
-      "shots": 5,
-      "shootingPct": 0.4,
+      "shots": 6,
+      "shootingPct": 0.33333,
       "deltaGoals": 0,
       "found": true
     },
     "Jimmy Snuggerud": {
       "playerId": 8483516,
       "goals": 1,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "STL",
-      "shots": 8,
-      "shootingPct": 0.125,
+      "shots": 9,
+      "shootingPct": 0.11111,
       "deltaGoals": 0,
       "found": true
     },
@@ -247,16 +254,16 @@
       "team": "WSH",
       "shots": 4,
       "shootingPct": 0.25,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Cole Caufield": {
       "playerId": 8481540,
       "goals": 2,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "MTL",
-      "shots": 7,
-      "shootingPct": 0.28571,
+      "shots": 13,
+      "shootingPct": 0.15384,
       "deltaGoals": 0,
       "found": true
     },
@@ -267,7 +274,7 @@
       "team": "WPG",
       "shots": 24,
       "shootingPct": 0.20833,
-      "deltaGoals": 2,
+      "deltaGoals": 0,
       "found": true
     },
     "Alex DeBrincat": {
@@ -283,7 +290,7 @@
     "Logan Cooley": {
       "playerId": 8483431,
       "goals": 0,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "UTA",
       "shots": 2,
       "shootingPct": 0.0,
@@ -293,19 +300,19 @@
     "Owen Tippett": {
       "playerId": 8480015,
       "goals": 1,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "PHI",
-      "shots": 9,
-      "shootingPct": 0.11111,
+      "shots": 13,
+      "shootingPct": 0.07692,
       "deltaGoals": 0,
       "found": true
     },
     "Dylan Cozens": {
       "playerId": 8481528,
       "goals": 0,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "OTT",
-      "shots": 7,
+      "shots": 8,
       "shootingPct": 0.0,
       "deltaGoals": 0,
       "found": true
@@ -317,13 +324,13 @@
       "team": "PIT",
       "shots": 3,
       "shootingPct": 0.33333,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Porter Martone": {
       "playerId": 8485406,
       "goals": 0,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "PHI",
       "shots": 2,
       "shootingPct": 0.0,
@@ -333,27 +340,27 @@
     "Auston Matthews": {
       "playerId": 8479318,
       "goals": 2,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "TOR",
-      "shots": 14,
-      "shootingPct": 0.14285,
+      "shots": 16,
+      "shootingPct": 0.125,
       "deltaGoals": 0,
       "found": true
     },
     "William Nylander": {
       "playerId": 8477939,
       "goals": 3,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "TOR",
-      "shots": 9,
-      "shootingPct": 0.33333,
+      "shots": 14,
+      "shootingPct": 0.21428,
       "deltaGoals": 0,
       "found": true
     },
     "Tim Stutzle": {
       "playerId": 8482116,
       "goals": 3,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "OTT",
       "shots": 7,
       "shootingPct": 0.42857,
@@ -362,18 +369,18 @@
     },
     "Logan Stankoven": {
       "playerId": 8482702,
-      "goals": 1,
-      "gamesPlayed": 4,
+      "goals": 4,
+      "gamesPlayed": 5,
       "team": "CAR",
-      "shots": 9,
-      "shootingPct": 0.11111,
-      "deltaGoals": 0,
+      "shots": 14,
+      "shootingPct": 0.28571,
+      "deltaGoals": 3,
       "found": true
     },
     "John Tavares": {
       "playerId": 8475166,
       "goals": 1,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "TOR",
       "shots": 14,
       "shootingPct": 0.07142,
@@ -393,10 +400,10 @@
     "Brock Boeser": {
       "playerId": 8478444,
       "goals": 1,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "VAN",
-      "shots": 6,
-      "shootingPct": 0.16666,
+      "shots": 7,
+      "shootingPct": 0.14285,
       "deltaGoals": 0,
       "found": true
     },
@@ -413,10 +420,10 @@
     "Nikita Kucherov": {
       "playerId": 8476453,
       "goals": 1,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "TBL",
-      "shots": 5,
-      "shootingPct": 0.2,
+      "shots": 6,
+      "shootingPct": 0.16666,
       "deltaGoals": 0,
       "found": true
     },
@@ -433,9 +440,9 @@
     "Filip Forsberg": {
       "playerId": 8476887,
       "goals": 0,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "NSH",
-      "shots": 5,
+      "shots": 8,
       "shootingPct": 0.0,
       "deltaGoals": 0,
       "found": true
@@ -452,41 +459,41 @@
     },
     "Nick Suzuki": {
       "playerId": 8480018,
-      "goals": 2,
-      "gamesPlayed": 3,
+      "goals": 3,
+      "gamesPlayed": 4,
       "team": "MTL",
-      "shots": 8,
-      "shootingPct": 0.25,
-      "deltaGoals": 0,
+      "shots": 9,
+      "shootingPct": 0.33333,
+      "deltaGoals": 1,
       "found": true
     },
     "Mark Stone": {
       "playerId": 8475913,
-      "goals": 2,
-      "gamesPlayed": 4,
+      "goals": 3,
+      "gamesPlayed": 5,
       "team": "VGK",
-      "shots": 8,
-      "shootingPct": 0.25,
-      "deltaGoals": 0,
+      "shots": 13,
+      "shootingPct": 0.23076,
+      "deltaGoals": 1,
       "found": true
     },
     "Nick Schmaltz": {
       "playerId": 8477951,
       "goals": 5,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "UTA",
-      "shots": 17,
-      "shootingPct": 0.29411,
+      "shots": 20,
+      "shootingPct": 0.25,
       "deltaGoals": 0,
       "found": true
     },
     "Gabriel Landeskog": {
       "playerId": 8476455,
       "goals": 1,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "COL",
-      "shots": 4,
-      "shootingPct": 0.25,
+      "shots": 5,
+      "shootingPct": 0.2,
       "deltaGoals": 0,
       "found": true
     },
@@ -513,10 +520,10 @@
     "Jake Guentzel": {
       "playerId": 8477404,
       "goals": 1,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "TBL",
-      "shots": 10,
-      "shootingPct": 0.1,
+      "shots": 11,
+      "shootingPct": 0.0909,
       "deltaGoals": 0,
       "found": true
     },
@@ -533,10 +540,10 @@
     "Sebastian Aho": {
       "playerId": 8478427,
       "goals": 4,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "CAR",
-      "shots": 15,
-      "shootingPct": 0.26666,
+      "shots": 16,
+      "shootingPct": 0.25,
       "deltaGoals": 0,
       "found": true
     },
@@ -563,9 +570,9 @@
     "Roman Kantserov": {
       "playerId": 8484390,
       "goals": 0,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "CHI",
-      "shots": 3,
+      "shots": 5,
       "shootingPct": 0.0,
       "deltaGoals": 0,
       "found": true
@@ -583,9 +590,9 @@
     "Wyatt Johnston": {
       "playerId": 8482740,
       "goals": 0,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "DAL",
-      "shots": 9,
+      "shots": 10,
       "shootingPct": 0.0,
       "deltaGoals": 0,
       "found": true
@@ -602,70 +609,70 @@
     },
     "Morgan Geekie": {
       "playerId": 8479987,
-      "goals": 0,
-      "gamesPlayed": 4,
+      "goals": 1,
+      "gamesPlayed": 5,
       "team": "BOS",
-      "shots": 5,
-      "shootingPct": 0.0,
-      "deltaGoals": 0,
+      "shots": 6,
+      "shootingPct": 0.16666,
+      "deltaGoals": 1,
       "found": true
     },
     "Brock Nelson": {
       "playerId": 8475754,
       "goals": 1,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "COL",
-      "shots": 2,
-      "shootingPct": 0.5,
+      "shots": 3,
+      "shootingPct": 0.33333,
       "deltaGoals": 0,
       "found": true
     },
     "Mitchell Marner": {
       "playerId": 8478483,
       "goals": 1,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "VGK",
-      "shots": 10,
-      "shootingPct": 0.1,
+      "shots": 15,
+      "shootingPct": 0.06666,
       "deltaGoals": 0,
       "found": true
     },
     "Cale Makar": {
       "playerId": 8480069,
-      "goals": 1,
-      "gamesPlayed": 3,
+      "goals": 3,
+      "gamesPlayed": 4,
       "team": "COL",
-      "shots": 8,
-      "shootingPct": 0.125,
-      "deltaGoals": 0,
+      "shots": 10,
+      "shootingPct": 0.3,
+      "deltaGoals": 2,
       "found": true
     },
-    "Ivar Stenberg": {
-      "playerId": 8486103,
+    "Seth Jarvis": {
+      "playerId": 8482093,
       "goals": 0,
-      "gamesPlayed": 3,
-      "team": "SJS",
-      "shots": 1,
-      "shootingPct": 0.0,
+      "gamesPlayed": 0,
+      "team": "",
+      "shots": 0,
+      "shootingPct": null,
       "deltaGoals": 0,
-      "found": true
+      "found": false
     },
     "Jason Robertson": {
       "playerId": 8480027,
-      "goals": 1,
-      "gamesPlayed": 3,
+      "goals": 2,
+      "gamesPlayed": 4,
       "team": "DAL",
-      "shots": 7,
-      "shootingPct": 0.14285,
-      "deltaGoals": 0,
+      "shots": 11,
+      "shootingPct": 0.18181,
+      "deltaGoals": 1,
       "found": true
     },
     "Matt Boldy": {
       "playerId": 8481557,
       "goals": 0,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "MIN",
-      "shots": 16,
+      "shots": 19,
       "shootingPct": 0.0,
       "deltaGoals": 0,
       "found": true
@@ -673,10 +680,10 @@
     "Brayden Point": {
       "playerId": 8478010,
       "goals": 1,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "TBL",
-      "shots": 7,
-      "shootingPct": 0.14285,
+      "shots": 9,
+      "shootingPct": 0.11111,
       "deltaGoals": 0,
       "found": true
     },
@@ -703,17 +710,17 @@
     "Drake Batherson": {
       "playerId": 8480208,
       "goals": 2,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "OTT",
-      "shots": 6,
-      "shootingPct": 0.33333,
+      "shots": 9,
+      "shootingPct": 0.22222,
       "deltaGoals": 0,
       "found": true
     },
     "John-Jason Peterka": {
       "playerId": 8482175,
       "goals": 2,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "BOS",
       "shots": 8,
       "shootingPct": 0.25,
@@ -732,21 +739,21 @@
     },
     "David Pastrnak": {
       "playerId": 8477956,
-      "goals": 0,
-      "gamesPlayed": 4,
+      "goals": 2,
+      "gamesPlayed": 5,
       "team": "BOS",
-      "shots": 15,
-      "shootingPct": 0.0,
-      "deltaGoals": 0,
+      "shots": 19,
+      "shootingPct": 0.10526,
+      "deltaGoals": 2,
       "found": true
     },
     "Tage Thompson": {
       "playerId": 8479420,
       "goals": 2,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "BUF",
-      "shots": 17,
-      "shootingPct": 0.11764,
+      "shots": 23,
+      "shootingPct": 0.08695,
       "deltaGoals": 0,
       "found": true
     },
@@ -762,40 +769,40 @@
     },
     "Bo Horvat": {
       "playerId": 8477500,
-      "goals": 2,
-      "gamesPlayed": 3,
+      "goals": 4,
+      "gamesPlayed": 4,
       "team": "NYI",
-      "shots": 10,
-      "shootingPct": 0.2,
-      "deltaGoals": 0,
+      "shots": 14,
+      "shootingPct": 0.28571,
+      "deltaGoals": 2,
       "found": true
     },
     "Matvei Michkov": {
       "playerId": 8484387,
-      "goals": 1,
-      "gamesPlayed": 4,
+      "goals": 2,
+      "gamesPlayed": 5,
       "team": "PHI",
-      "shots": 5,
-      "shootingPct": 0.2,
-      "deltaGoals": 0,
+      "shots": 6,
+      "shootingPct": 0.33333,
+      "deltaGoals": 1,
       "found": true
     },
     "Kirill Marchenko": {
       "playerId": 8480893,
       "goals": 1,
-      "gamesPlayed": 4,
+      "gamesPlayed": 5,
       "team": "TOR",
-      "shots": 12,
-      "shootingPct": 0.08333,
+      "shots": 15,
+      "shootingPct": 0.06666,
       "deltaGoals": 0,
       "found": true
     },
     "Dylan Holloway": {
       "playerId": 8482077,
       "goals": 0,
-      "gamesPlayed": 3,
+      "gamesPlayed": 4,
       "team": "STL",
-      "shots": 4,
+      "shots": 6,
       "shootingPct": 0.0,
       "deltaGoals": 0,
       "found": true
@@ -807,17 +814,17 @@
       "team": "ANA",
       "shots": 11,
       "shootingPct": 0.27272,
-      "deltaGoals": 2,
+      "deltaGoals": 0,
       "found": true
     },
     "Jack Eichel": {
       "playerId": 8478403,
-      "goals": 2,
-      "gamesPlayed": 4,
+      "goals": 3,
+      "gamesPlayed": 5,
       "team": "VGK",
-      "shots": 8,
-      "shootingPct": 0.25,
-      "deltaGoals": 0,
+      "shots": 14,
+      "shootingPct": 0.21428,
+      "deltaGoals": 1,
       "found": true
     },
     "Brady Tkachuk": {
@@ -847,7 +854,7 @@
       "team": "WSH",
       "shots": 11,
       "shootingPct": 0.27272,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Lucas Raymond": {
@@ -877,7 +884,7 @@
       "team": "EDM",
       "shots": 16,
       "shootingPct": 0.25,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "found": true
     },
     "Jordan Kyrou": {
@@ -891,6 +898,8 @@
       "found": true
     }
   },
-  "unmatchedPlayers": [],
+  "unmatchedPlayers": [
+    "Seth Jarvis"
+  ],
   "message": "OK"
 }

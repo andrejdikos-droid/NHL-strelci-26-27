@@ -41,6 +41,22 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 5
+    },
+    {
+      "date": "2026-10-09",
+      "timestamp": "2026-10-09T06:11:49.817155+00:00",
+      "manager": "DOBRAK",
+      "outPlayer": "Ivar Stenberg",
+      "outPlayerId": 8486103,
+      "inPlayer": "Seth Jarvis",
+      "inPlayerId": 8482093,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 0,
+      "incomingGoalsAtAcquisition": 0,
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 6
     }
   ]
 }

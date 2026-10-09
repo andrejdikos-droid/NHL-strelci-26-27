@@ -398,7 +398,7 @@
     {
       "name": "DOBRAK",
       "projection": 258.5,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Macklin Celebrini",
@@ -443,8 +443,8 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Ivar Stenberg",
-          "playerId": 8486103,
+          "player": "Seth Jarvis",
+          "playerId": 8482093,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         }
