@@ -549,6 +549,56 @@
           "net": -24
         }
       }
+    },
+    {
+      "date": "2026-10-10",
+      "updatedAt": "2026-10-10T07:25:54.013353+00:00",
+      "managers": {
+        "DIKSO": {
+          "goals": 10,
+          "net": -16
+        },
+        "PALI": {
+          "goals": 11,
+          "net": -5
+        },
+        "ANDROS": {
+          "goals": 15,
+          "net": 39
+        },
+        "DOMCO": {
+          "goals": 13,
+          "net": 17
+        },
+        "IGOR": {
+          "goals": 15,
+          "net": 39
+        },
+        "MISO": {
+          "goals": 12,
+          "net": 6
+        },
+        "MIKY": {
+          "goals": 11,
+          "net": -5
+        },
+        "DOBRAK": {
+          "goals": 6,
+          "net": -60
+        },
+        "ZELKIS": {
+          "goals": 9,
+          "net": -27
+        },
+        "ONDRO": {
+          "goals": 15,
+          "net": 39
+        },
+        "XAVIER": {
+          "goals": 9,
+          "net": -27
+        }
+      }
     }
   ]
 }
