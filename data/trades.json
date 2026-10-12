@@ -57,6 +57,22 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 6
+    },
+    {
+      "date": "2026-10-12",
+      "timestamp": "2026-10-12T20:52:58.056030+00:00",
+      "manager": "ONDRO",
+      "outPlayer": "Dylan Holloway",
+      "outPlayerId": 8482077,
+      "inPlayer": "Connor Bedard",
+      "inPlayerId": 8484144,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 0,
+      "incomingGoalsAtAcquisition": 0,
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 7
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-10-12T08:32:34.032575+00:00",
+  "updatedAt": "2026-10-12T20:52:58.736734+00:00",
   "source": "NHL Stats API · playerId locked · nightly goals from play-by-play",
   "nightGameDate": "2026-10-11",
   "nightGameIds": [
@@ -22,11 +22,11 @@
     },
     "Sam Reinhart": {
       "playerId": 8477933,
-      "goals": 0,
-      "gamesPlayed": 5,
+      "goals": 2,
+      "gamesPlayed": 6,
       "team": "FLA",
-      "shots": 12,
-      "shootingPct": 0.0,
+      "shots": 14,
+      "shootingPct": 0.14285,
       "deltaGoals": 0,
       "found": true
     },
@@ -443,10 +443,10 @@
     "Matthew Tkachuk": {
       "playerId": 8479314,
       "goals": 3,
-      "gamesPlayed": 5,
+      "gamesPlayed": 6,
       "team": "FLA",
-      "shots": 11,
-      "shootingPct": 0.27272,
+      "shots": 13,
+      "shootingPct": 0.23076,
       "deltaGoals": 0,
       "found": true
     },
@@ -742,11 +742,11 @@
     },
     "Tage Thompson": {
       "playerId": 8479420,
-      "goals": 3,
-      "gamesPlayed": 5,
+      "goals": 4,
+      "gamesPlayed": 6,
       "team": "BUF",
-      "shots": 29,
-      "shootingPct": 0.10344,
+      "shots": 30,
+      "shootingPct": 0.13333,
       "deltaGoals": 0,
       "found": true
     },
@@ -790,15 +790,15 @@
       "deltaGoals": 0,
       "found": true
     },
-    "Dylan Holloway": {
-      "playerId": 8482077,
+    "Connor Bedard": {
+      "playerId": 8484144,
       "goals": 0,
-      "gamesPlayed": 5,
-      "team": "STL",
-      "shots": 9,
-      "shootingPct": 0.0,
+      "gamesPlayed": 0,
+      "team": "",
+      "shots": 0,
+      "shootingPct": null,
       "deltaGoals": 0,
-      "found": true
+      "found": false
     },
     "Beckett Sennecke": {
       "playerId": 8484762,
@@ -823,9 +823,9 @@
     "Brady Tkachuk": {
       "playerId": 8480801,
       "goals": 0,
-      "gamesPlayed": 5,
+      "gamesPlayed": 6,
       "team": "FLA",
-      "shots": 12,
+      "shots": 15,
       "shootingPct": 0.0,
       "deltaGoals": 0,
       "found": true
@@ -833,7 +833,7 @@
     "Carter Verhaeghe": {
       "playerId": 8477409,
       "goals": 1,
-      "gamesPlayed": 5,
+      "gamesPlayed": 6,
       "team": "FLA",
       "shots": 7,
       "shootingPct": 0.14285,
@@ -892,7 +892,8 @@
     }
   },
   "unmatchedPlayers": [
-    "Seth Jarvis"
+    "Seth Jarvis",
+    "Connor Bedard"
   ],
   "message": "OK"
 }

@@ -508,7 +508,7 @@
     {
       "name": "ONDRO",
       "projection": 257.0,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "David Pastrnak",
@@ -547,8 +547,8 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Dylan Holloway",
-          "playerId": 8482077,
+          "player": "Connor Bedard",
+          "playerId": 8484144,
           "bankedGoals": 0,
           "goalsAtAcquisition": 0
         },
