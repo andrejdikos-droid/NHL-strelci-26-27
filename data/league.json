@@ -68,7 +68,7 @@
     {
       "name": "PALI",
       "projection": 267.3,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Nathan MacKinnon",
@@ -101,10 +101,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Travis Konecny",
-          "playerId": 8478439,
+          "player": "Mikael Granlund",
+          "playerId": 8475798,
           "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "goalsAtAcquisition": 2
         },
         {
           "player": "Pavel Zacha",

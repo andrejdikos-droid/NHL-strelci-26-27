@@ -73,6 +73,22 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 7
+    },
+    {
+      "date": "2026-10-13",
+      "timestamp": "2026-10-13T04:49:35.616380+00:00",
+      "manager": "PALI",
+      "outPlayer": "Travis Konecny",
+      "outPlayerId": 8478439,
+      "inPlayer": "Mikael Granlund",
+      "inPlayerId": 8475798,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 0,
+      "incomingGoalsAtAcquisition": 2,
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 8
     }
   ]
 }
