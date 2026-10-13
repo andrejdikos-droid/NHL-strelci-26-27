@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-10-13T04:49:36.254616+00:00",
+  "updatedAt": "2026-10-13T04:51:10.095520+00:00",
   "source": "NHL Stats API · playerId locked · nightly goals from play-by-play",
   "nightGameDate": "2026-10-12",
   "nightGameIds": [
@@ -160,13 +160,13 @@
       "deltaGoals": 0,
       "found": true
     },
-    "Alexei Protas": {
-      "playerId": 8481656,
-      "goals": 0,
-      "gamesPlayed": 5,
-      "team": "WSH",
-      "shots": 5,
-      "shootingPct": 0.0,
+    "Alexis Lafrenière": {
+      "playerId": 8482109,
+      "goals": 5,
+      "gamesPlayed": 7,
+      "team": "NYR",
+      "shots": 14,
+      "shootingPct": 0.35714,
       "deltaGoals": 0,
       "found": true
     },

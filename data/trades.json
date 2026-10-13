@@ -89,6 +89,22 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 8
+    },
+    {
+      "date": "2026-10-13",
+      "timestamp": "2026-10-13T04:51:09.527171+00:00",
+      "manager": "PALI",
+      "outPlayer": "Alexei Protas",
+      "outPlayerId": 8481656,
+      "inPlayer": "Alexis Lafrenière",
+      "inPlayerId": 8482109,
+      "countedTrade": true,
+      "tradeNumber": 2,
+      "bankedGoals": 0,
+      "incomingGoalsAtAcquisition": 5,
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 9
     }
   ]
 }

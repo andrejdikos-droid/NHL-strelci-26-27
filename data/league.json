@@ -68,7 +68,7 @@
     {
       "name": "PALI",
       "projection": 267.3,
-      "tradesUsed": 1,
+      "tradesUsed": 2,
       "roster": [
         {
           "player": "Nathan MacKinnon",
@@ -113,10 +113,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Alexei Protas",
-          "playerId": 8481656,
+          "player": "Alexis Lafrenière",
+          "playerId": 8482109,
           "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "goalsAtAcquisition": 5
         }
       ]
     },
