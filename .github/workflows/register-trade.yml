@@ -8,6 +8,10 @@ permissions:
   contents: write
   issues: write
 
+concurrency:
+  group: nhl-data-writes
+  cancel-in-progress: false
+
 jobs:
   register:
     if: >
@@ -25,10 +29,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Refresh official goal ledger before trade
+        run: python scripts/update_stats.py
+
       - name: Validate / register trade
         run: python scripts/apply_trade.py
 
-      - name: Refresh NHL stats and team totals
+      - name: Rebuild standings after real trade
         if: ${{ !startsWith(github.event.issue.title, '[TRADE-TEST]') }}
         run: python scripts/update_stats.py
 
@@ -37,7 +44,7 @@ jobs:
         run: |
           git config user.name "nhl-strelci-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/league.json data/trades.json data/stats.json data/history.json
+          git add data/league.json data/trades.json data/stats.json data/history.json data/game_ledger.json
           git commit -m "Register trade from issue #${{ github.event.issue.number }}"
           git push
 
@@ -48,7 +55,7 @@ jobs:
         run: |
           gh issue close "${{ github.event.issue.number }}" \
             --repo "${{ github.repository }}" \
-            --comment "✅ Trejd bol zaregistrovaný. Dashboard sa po GitHub Pages deployi automaticky aktualizuje."
+            --comment "✅ Trejd bol zaregistrovaný z oficiálneho NHL game-ledgeru. Dashboard sa po deployi automaticky aktualizuje."
 
       - name: Close successful dry run
         if: ${{ success() && startsWith(github.event.issue.title, '[TRADE-TEST]') }}
@@ -57,4 +64,4 @@ jobs:
         run: |
           gh issue close "${{ github.event.issue.number }}" \
             --repo "${{ github.repository }}" \
-            --comment "✅ DRY RUN prešiel. Zostavy, góly ani počet trejdov sa nezmenili."
+            --comment "✅ DRY RUN prešiel. Roster ani počet trejdov sa nezmenil."
