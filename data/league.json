@@ -13,7 +13,7 @@
     {
       "name": "DIKSO",
       "projection": 297.8,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Connor McDavid",
@@ -58,10 +58,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Quinton Byfield",
-          "playerId": 8482124,
-          "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "player": "Joel Eriksson Ek",
+          "playerId": 8478493,
+          "bankedGoals": 1,
+          "goalsAtAcquisition": 2
         }
       ]
     },

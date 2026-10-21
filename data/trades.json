@@ -105,6 +105,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 9
+    },
+    {
+      "date": "2026-10-21",
+      "timestamp": "2026-10-21T08:23:19.034081+00:00",
+      "manager": "DIKSO",
+      "outPlayer": "Quinton Byfield",
+      "outPlayerId": 8482124,
+      "inPlayer": "Joel Eriksson Ek",
+      "inPlayerId": 8478493,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 1,
+      "outSeasonGoalsAtTrade": 1,
+      "incomingGoalsAtAcquisition": 2,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 10
     }
   ]
 }
