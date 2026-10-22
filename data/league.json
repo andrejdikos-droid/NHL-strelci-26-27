@@ -178,7 +178,7 @@
     {
       "name": "DOMCO",
       "projection": 273.4,
-      "tradesUsed": 1,
+      "tradesUsed": 2,
       "roster": [
         {
           "player": "Cole Caufield",
@@ -211,10 +211,10 @@
           "goalsAtAcquisition": 3
         },
         {
-          "player": "Dylan Cozens",
-          "playerId": 8481528,
+          "player": "Cole Perfetti",
+          "playerId": 8482149,
           "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "goalsAtAcquisition": 6
         },
         {
           "player": "Bryan Rust",

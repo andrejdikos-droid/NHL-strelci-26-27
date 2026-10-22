@@ -141,6 +141,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 11
+    },
+    {
+      "date": "2026-10-22",
+      "timestamp": "2026-10-22T07:18:51.554875+00:00",
+      "manager": "DOMCO",
+      "outPlayer": "Dylan Cozens",
+      "outPlayerId": 8481528,
+      "inPlayer": "Cole Perfetti",
+      "inPlayerId": 8482149,
+      "countedTrade": true,
+      "tradeNumber": 2,
+      "bankedGoals": 0,
+      "outSeasonGoalsAtTrade": 0,
+      "incomingGoalsAtAcquisition": 6,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 12
     }
   ]
 }

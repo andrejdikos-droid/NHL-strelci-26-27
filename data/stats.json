@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-10-22T07:16:53.587534+00:00",
+  "updatedAt": "2026-10-22T07:18:56.631637+00:00",
   "source": "NHL Gamecenter boxscores · per-game ledger · playerId locked",
   "nightGameDate": "2026-10-21",
   "players": {
@@ -353,15 +353,15 @@
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
-    "Dylan Cozens": {
-      "playerId": 8481528,
-      "goals": 0,
-      "gamesPlayed": 10,
-      "team": "OTT",
-      "shots": 22,
-      "shootingPct": 0.0,
+    "Cole Perfetti": {
+      "playerId": 8482149,
+      "goals": 6,
+      "gamesPlayed": 9,
+      "team": "WPG",
+      "shots": 26,
+      "shootingPct": 0.23076,
       "deltaGoals": 0,
-      "summaryGoals": 0,
+      "summaryGoals": 6,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -1125,7 +1125,7 @@
       "8479337": 6,
       "8483431": 1,
       "8477940": 1,
-      "8481528": 0,
+      "8482149": 0,
       "8475810": 3,
       "8485406": 2
     },
