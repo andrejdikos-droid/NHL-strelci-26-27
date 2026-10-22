@@ -123,6 +123,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 10
+    },
+    {
+      "date": "2026-10-22",
+      "timestamp": "2026-10-22T07:16:49.735967+00:00",
+      "manager": "DOMCO",
+      "outPlayer": "Owen Tippett",
+      "outPlayerId": 8480015,
+      "inPlayer": "Nikolaj Ehlers",
+      "inPlayerId": 8477940,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 1,
+      "outSeasonGoalsAtTrade": 1,
+      "incomingGoalsAtAcquisition": 3,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 11
     }
   ]
 }

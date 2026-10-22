@@ -178,7 +178,7 @@
     {
       "name": "DOMCO",
       "projection": 273.4,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Cole Caufield",
@@ -205,10 +205,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Owen Tippett",
-          "playerId": 8480015,
-          "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "player": "Nikolaj Ehlers",
+          "playerId": 8477940,
+          "bankedGoals": 1,
+          "goalsAtAcquisition": 3
         },
         {
           "player": "Dylan Cozens",
