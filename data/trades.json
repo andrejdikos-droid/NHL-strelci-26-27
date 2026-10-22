@@ -159,6 +159,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 12
+    },
+    {
+      "date": "2026-10-22",
+      "timestamp": "2026-10-22T09:28:26.906229+00:00",
+      "manager": "IGOR",
+      "outPlayer": "John Tavares",
+      "outPlayerId": 8475166,
+      "inPlayer": "Artturi Lehkonen",
+      "inPlayerId": 8477476,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 2,
+      "outSeasonGoalsAtTrade": 2,
+      "incomingGoalsAtAcquisition": 8,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 13
     }
   ]
 }

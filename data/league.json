@@ -233,7 +233,7 @@
     {
       "name": "IGOR",
       "projection": 255.3,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Auston Matthews",
@@ -260,10 +260,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "John Tavares",
-          "playerId": 8475166,
-          "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "player": "Artturi Lehkonen",
+          "playerId": 8477476,
+          "bankedGoals": 2,
+          "goalsAtAcquisition": 8
         },
         {
           "player": "Gabriel Vilardi",
