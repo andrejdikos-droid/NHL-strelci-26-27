@@ -1,17 +1,17 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-10-28T08:54:59.007006+00:00",
+  "updatedAt": "2026-10-29T08:04:50.694838+00:00",
   "source": "NHL Gamecenter boxscores · per-game ledger · playerId locked",
-  "nightGameDate": "2026-10-27",
+  "nightGameDate": "2026-10-28",
   "players": {
     "Connor McDavid": {
       "playerId": 8478402,
       "goals": 8,
-      "gamesPlayed": 12,
+      "gamesPlayed": 13,
       "team": "EDM",
-      "shots": 30,
-      "shootingPct": 0.26666,
+      "shots": 33,
+      "shootingPct": 0.24242,
       "deltaGoals": 0,
       "summaryGoals": 8,
       "goalSource": "NHL gamecenter boxscores",
@@ -24,7 +24,7 @@
       "team": "FLA",
       "shots": 39,
       "shootingPct": 0.15384,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 6,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -48,7 +48,7 @@
       "team": "ANA",
       "shots": 15,
       "shootingPct": 0.26666,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 4,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -96,20 +96,20 @@
       "team": "MIN",
       "shots": 48,
       "shootingPct": 0.08333,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 4,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
     "Nathan MacKinnon": {
       "playerId": 8477492,
-      "goals": 7,
-      "gamesPlayed": 12,
+      "goals": 8,
+      "gamesPlayed": 13,
       "team": "COL",
-      "shots": 50,
-      "shootingPct": 0.14,
-      "deltaGoals": 0,
-      "summaryGoals": 7,
+      "shots": 52,
+      "shootingPct": 0.15384,
+      "deltaGoals": 1,
+      "summaryGoals": 8,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -128,10 +128,10 @@
     "Martin Necas": {
       "playerId": 8480039,
       "goals": 6,
-      "gamesPlayed": 12,
+      "gamesPlayed": 13,
       "team": "COL",
-      "shots": 24,
-      "shootingPct": 0.25,
+      "shots": 28,
+      "shootingPct": 0.21428,
       "deltaGoals": 0,
       "summaryGoals": 6,
       "goalSource": "NHL gamecenter boxscores",
@@ -180,7 +180,7 @@
       "team": "BOS",
       "shots": 20,
       "shootingPct": 0.15,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 3,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -204,7 +204,7 @@
       "team": "MIN",
       "shots": 48,
       "shootingPct": 0.29166,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 14,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -212,11 +212,11 @@
     "Jack Hughes": {
       "playerId": 8481559,
       "goals": 4,
-      "gamesPlayed": 12,
+      "gamesPlayed": 13,
       "team": "NJD",
-      "shots": 45,
-      "shootingPct": 0.08888,
-      "deltaGoals": 1,
+      "shots": 47,
+      "shootingPct": 0.0851,
+      "deltaGoals": 0,
       "summaryGoals": 4,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -284,10 +284,10 @@
     "Tom Wilson": {
       "playerId": 8476880,
       "goals": 2,
-      "gamesPlayed": 10,
+      "gamesPlayed": 11,
       "team": "WSH",
-      "shots": 22,
-      "shootingPct": 0.0909,
+      "shots": 23,
+      "shootingPct": 0.08695,
       "deltaGoals": 0,
       "summaryGoals": 2,
       "goalSource": "NHL gamecenter boxscores",
@@ -336,7 +336,7 @@
       "team": "UTA",
       "shots": 16,
       "shootingPct": 0.25,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 4,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -380,10 +380,10 @@
     "Porter Martone": {
       "playerId": 8485406,
       "goals": 3,
-      "gamesPlayed": 14,
+      "gamesPlayed": 15,
       "team": "PHI",
-      "shots": 17,
-      "shootingPct": 0.17647,
+      "shots": 19,
+      "shootingPct": 0.15789,
       "deltaGoals": 0,
       "summaryGoals": 3,
       "goalSource": "NHL gamecenter boxscores",
@@ -391,23 +391,23 @@
     },
     "Auston Matthews": {
       "playerId": 8479318,
-      "goals": 9,
-      "gamesPlayed": 14,
+      "goals": 10,
+      "gamesPlayed": 15,
       "team": "TOR",
-      "shots": 40,
-      "shootingPct": 0.225,
-      "deltaGoals": 0,
-      "summaryGoals": 9,
+      "shots": 44,
+      "shootingPct": 0.22727,
+      "deltaGoals": 1,
+      "summaryGoals": 10,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
     "William Nylander": {
       "playerId": 8477939,
       "goals": 9,
-      "gamesPlayed": 14,
+      "gamesPlayed": 15,
       "team": "TOR",
-      "shots": 41,
-      "shootingPct": 0.21951,
+      "shots": 44,
+      "shootingPct": 0.20454,
       "deltaGoals": 0,
       "summaryGoals": 9,
       "goalSource": "NHL gamecenter boxscores",
@@ -440,10 +440,10 @@
     "Artturi Lehkonen": {
       "playerId": 8477476,
       "goals": 10,
-      "gamesPlayed": 12,
+      "gamesPlayed": 13,
       "team": "COL",
-      "shots": 22,
-      "shootingPct": 0.45454,
+      "shots": 24,
+      "shootingPct": 0.41666,
       "deltaGoals": 0,
       "summaryGoals": 10,
       "goalSource": "NHL gamecenter boxscores",
@@ -468,7 +468,7 @@
       "team": "VAN",
       "shots": 22,
       "shootingPct": 0.18181,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 4,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -516,7 +516,7 @@
       "team": "NSH",
       "shots": 32,
       "shootingPct": 0.09375,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 3,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -571,23 +571,23 @@
     },
     "Gabriel Landeskog": {
       "playerId": 8476455,
-      "goals": 4,
-      "gamesPlayed": 12,
+      "goals": 5,
+      "gamesPlayed": 13,
       "team": "COL",
-      "shots": 15,
-      "shootingPct": 0.26666,
-      "deltaGoals": 0,
-      "summaryGoals": 4,
+      "shots": 16,
+      "shootingPct": 0.3125,
+      "deltaGoals": 1,
+      "summaryGoals": 5,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
     "Leon Draisaitl": {
       "playerId": 8477934,
       "goals": 12,
-      "gamesPlayed": 12,
+      "gamesPlayed": 13,
       "team": "EDM",
-      "shots": 46,
-      "shootingPct": 0.26086,
+      "shots": 48,
+      "shootingPct": 0.25,
       "deltaGoals": 0,
       "summaryGoals": 12,
       "goalSource": "NHL gamecenter boxscores",
@@ -636,7 +636,7 @@
       "team": "CAR",
       "shots": 43,
       "shootingPct": 0.18604,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 8,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -644,11 +644,11 @@
     "Nico Hischier": {
       "playerId": 8480002,
       "goals": 7,
-      "gamesPlayed": 12,
+      "gamesPlayed": 13,
       "team": "NJD",
-      "shots": 29,
-      "shootingPct": 0.24137,
-      "deltaGoals": 2,
+      "shots": 32,
+      "shootingPct": 0.21875,
+      "deltaGoals": 0,
       "summaryGoals": 7,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -672,7 +672,7 @@
       "team": "CHI",
       "shots": 22,
       "shootingPct": 0.22727,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 5,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -728,10 +728,10 @@
     "Brock Nelson": {
       "playerId": 8475754,
       "goals": 3,
-      "gamesPlayed": 12,
+      "gamesPlayed": 13,
       "team": "COL",
-      "shots": 21,
-      "shootingPct": 0.14285,
+      "shots": 24,
+      "shootingPct": 0.125,
       "deltaGoals": 0,
       "summaryGoals": 3,
       "goalSource": "NHL gamecenter boxscores",
@@ -752,10 +752,10 @@
     "Cale Makar": {
       "playerId": 8480069,
       "goals": 3,
-      "gamesPlayed": 11,
+      "gamesPlayed": 12,
       "team": "COL",
-      "shots": 28,
-      "shootingPct": 0.10714,
+      "shots": 34,
+      "shootingPct": 0.08823,
       "deltaGoals": 0,
       "summaryGoals": 3,
       "goalSource": "NHL gamecenter boxscores",
@@ -864,7 +864,7 @@
       "team": "CBJ",
       "shots": 29,
       "shootingPct": 0.13793,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 4,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -912,20 +912,20 @@
       "team": "NYI",
       "shots": 38,
       "shootingPct": 0.15789,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 6,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
     "Matvei Michkov": {
       "playerId": 8484387,
-      "goals": 8,
-      "gamesPlayed": 14,
+      "goals": 9,
+      "gamesPlayed": 15,
       "team": "PHI",
-      "shots": 20,
-      "shootingPct": 0.4,
-      "deltaGoals": 0,
-      "summaryGoals": 8,
+      "shots": 21,
+      "shootingPct": 0.42857,
+      "deltaGoals": 1,
+      "summaryGoals": 9,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -960,7 +960,7 @@
       "team": "ANA",
       "shots": 29,
       "shootingPct": 0.24137,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 7,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -972,7 +972,7 @@
       "team": "VGK",
       "shots": 38,
       "shootingPct": 0.18421,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 7,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -984,7 +984,7 @@
       "team": "FLA",
       "shots": 40,
       "shootingPct": 0.2,
-      "deltaGoals": 1,
+      "deltaGoals": 0,
       "summaryGoals": 8,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
@@ -996,20 +996,20 @@
       "team": "FLA",
       "shots": 25,
       "shootingPct": 0.32,
-      "deltaGoals": 2,
+      "deltaGoals": 0,
       "summaryGoals": 8,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
     "Alex Tuch": {
       "playerId": 8477949,
-      "goals": 7,
-      "gamesPlayed": 10,
+      "goals": 9,
+      "gamesPlayed": 11,
       "team": "WSH",
-      "shots": 27,
-      "shootingPct": 0.25925,
-      "deltaGoals": 0,
-      "summaryGoals": 7,
+      "shots": 32,
+      "shootingPct": 0.28125,
+      "deltaGoals": 2,
+      "summaryGoals": 9,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -1028,10 +1028,10 @@
     "Alex Ovechkin": {
       "playerId": 8471214,
       "goals": 1,
-      "gamesPlayed": 10,
+      "gamesPlayed": 11,
       "team": "WSH",
-      "shots": 14,
-      "shootingPct": 0.07142,
+      "shots": 16,
+      "shootingPct": 0.0625,
       "deltaGoals": 0,
       "summaryGoals": 1,
       "goalSource": "NHL gamecenter boxscores",
@@ -1040,10 +1040,10 @@
     "Vasili Podkolzin": {
       "playerId": 8481617,
       "goals": 8,
-      "gamesPlayed": 12,
+      "gamesPlayed": 13,
       "team": "EDM",
-      "shots": 27,
-      "shootingPct": 0.29629,
+      "shots": 29,
+      "shootingPct": 0.27586,
       "deltaGoals": 0,
       "summaryGoals": 8,
       "goalSource": "NHL gamecenter boxscores",
@@ -1051,41 +1051,41 @@
     },
     "Jordan Kyrou": {
       "playerId": 8479385,
-      "goals": 2,
-      "gamesPlayed": 10,
+      "goals": 4,
+      "gamesPlayed": 11,
       "team": "WSH",
-      "shots": 15,
-      "shootingPct": 0.13333,
-      "deltaGoals": 0,
-      "summaryGoals": 2,
+      "shots": 18,
+      "shootingPct": 0.22222,
+      "deltaGoals": 2,
+      "summaryGoals": 4,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     }
   },
   "managerTotals": {
     "DIKSO": 38,
-    "PALI": 36,
+    "PALI": 37,
     "ANDROS": 45,
     "DOMCO": 33,
-    "IGOR": 44,
-    "MISO": 34,
+    "IGOR": 45,
+    "MISO": 35,
     "MIKY": 45,
     "DOBRAK": 19,
     "ZELKIS": 33,
-    "ONDRO": 44,
-    "XAVIER": 42
+    "ONDRO": 45,
+    "XAVIER": 46
   },
   "managerDaily": {
-    "DIKSO": 3,
+    "DIKSO": 0,
     "PALI": 1,
-    "ANDROS": 2,
-    "DOMCO": 1,
+    "ANDROS": 0,
+    "DOMCO": 0,
     "IGOR": 1,
     "MISO": 1,
-    "MIKY": 4,
+    "MIKY": 0,
     "DOBRAK": 0,
-    "ZELKIS": 1,
-    "ONDRO": 2,
+    "ZELKIS": 0,
+    "ONDRO": 1,
     "XAVIER": 4
   },
   "currentSlotTotals": {
@@ -1100,7 +1100,7 @@
       "8478493": 3
     },
     "PALI": {
-      "8477492": 7,
+      "8477492": 8,
       "8478550": 7,
       "8480039": 6,
       "8474564": 7,
@@ -1130,7 +1130,7 @@
       "8485406": 3
     },
     "IGOR": {
-      "8479318": 9,
+      "8479318": 10,
       "8477939": 9,
       "8482116": 8,
       "8482702": 8,
@@ -1147,7 +1147,7 @@
       "8480018": 5,
       "8475913": 8,
       "8477951": 3,
-      "8476455": 4
+      "8476455": 5
     },
     "MIKY": {
       "8477934": 12,
@@ -1184,7 +1184,7 @@
       "8479420": 5,
       "8481604": 3,
       "8477500": 6,
-      "8484387": 8,
+      "8484387": 9,
       "8480893": 6,
       "8484144": 2,
       "8484762": 7
@@ -1193,56 +1193,34 @@
       "8478403": 7,
       "8480801": 8,
       "8477409": 8,
-      "8477949": 7,
+      "8477949": 9,
       "8482078": 3,
       "8471214": 1,
       "8481617": 6,
-      "8479385": 2
+      "8479385": 4
     }
   },
   "currentSlotDaily": {
-    "ZELKIS": {
-      "8484166": 1
-    },
-    "MIKY": {
-      "8478427": 1,
-      "8484390": 1,
-      "8480002": 2
-    },
-    "PALI": {
-      "8478401": 1
-    },
-    "MISO": {
-      "8476887": 1
+    "XAVIER": {
+      "8479385": 2,
+      "8477949": 2
     },
     "ONDRO": {
-      "8477500": 1,
-      "8484762": 1
+      "8484387": 1
     },
-    "ANDROS": {
-      "8481559": 1,
-      "8478864": 1
+    "PALI": {
+      "8477492": 1
     },
-    "XAVIER": {
-      "8480801": 1,
-      "8477409": 2,
-      "8478403": 1
-    },
-    "DIKSO": {
-      "8477933": 1,
-      "8478493": 1,
-      "8484153": 1
-    },
-    "DOMCO": {
-      "8483431": 1
+    "MISO": {
+      "8476455": 1
     },
     "IGOR": {
-      "8478444": 1
+      "8479318": 1
     }
   },
   "audit": {
-    "ledgerGames": 198,
-    "refreshedGamesThisRun": 93,
+    "ledgerGames": 202,
+    "refreshedGamesThisRun": 95,
     "summaryDiscrepancies": [],
     "summaryDiscrepancyCount": 0,
     "mode": "incremental",
