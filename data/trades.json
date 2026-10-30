@@ -177,6 +177,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 13
+    },
+    {
+      "date": "2026-10-30",
+      "timestamp": "2026-10-30T07:25:42.858698+00:00",
+      "manager": "DIKSO",
+      "outPlayer": "Dylan Larkin",
+      "outPlayerId": 8477946,
+      "inPlayer": "Viktor Arvidsson",
+      "inPlayerId": 8478042,
+      "countedTrade": true,
+      "tradeNumber": 2,
+      "bankedGoals": 2,
+      "outSeasonGoalsAtTrade": 2,
+      "incomingGoalsAtAcquisition": 8,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 14
     }
   ]
 }
