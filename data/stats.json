@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-11-01T12:00:29.900989+00:00",
+  "updatedAt": "2026-11-01T14:15:11.570152+00:00",
   "source": "NHL Gamecenter boxscores · per-game ledger · playerId locked",
   "nightGameDate": "2026-10-31",
   "players": {
@@ -1243,10 +1243,10 @@
   },
   "audit": {
     "ledgerGames": 226,
-    "refreshedGamesThisRun": 226,
+    "refreshedGamesThisRun": 92,
     "summaryDiscrepancies": [],
     "summaryDiscrepancyCount": 0,
-    "mode": "full",
+    "mode": "incremental",
     "recheckDays": 14,
     "accountingRepairs": [],
     "accountingRepairCount": 0
