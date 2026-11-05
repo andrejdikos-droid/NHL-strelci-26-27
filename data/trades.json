@@ -195,6 +195,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 14
+    },
+    {
+      "date": "2026-11-05",
+      "timestamp": "2026-11-05T21:15:08.808157+00:00",
+      "manager": "IGOR",
+      "outPlayer": "Ivan Demidov",
+      "outPlayerId": 8484984,
+      "inPlayer": "Arseny Gritsyuk",
+      "inPlayerId": 8481721,
+      "countedTrade": true,
+      "tradeNumber": 2,
+      "bankedGoals": 1,
+      "outSeasonGoalsAtTrade": 1,
+      "incomingGoalsAtAcquisition": 8,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 16
     }
   ]
 }
