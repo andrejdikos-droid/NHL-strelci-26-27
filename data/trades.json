@@ -213,6 +213,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 16
+    },
+    {
+      "date": "2026-11-07",
+      "timestamp": "2026-11-07T11:50:06.922167+00:00",
+      "manager": "DOBRAK",
+      "outPlayer": "Mitchell Marner",
+      "outPlayerId": 8478483,
+      "inPlayer": "John Tavares",
+      "inPlayerId": 8475166,
+      "countedTrade": true,
+      "tradeNumber": 2,
+      "bankedGoals": 2,
+      "outSeasonGoalsAtTrade": 2,
+      "incomingGoalsAtAcquisition": 2,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 17
     }
   ]
 }

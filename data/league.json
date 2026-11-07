@@ -398,7 +398,7 @@
     {
       "name": "DOBRAK",
       "projection": 258.5,
-      "tradesUsed": 1,
+      "tradesUsed": 2,
       "roster": [
         {
           "player": "Macklin Celebrini",
@@ -431,10 +431,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Mitchell Marner",
-          "playerId": 8478483,
-          "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "player": "John Tavares",
+          "playerId": 8475166,
+          "bankedGoals": 2,
+          "goalsAtAcquisition": 2
         },
         {
           "player": "Cale Makar",
