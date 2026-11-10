@@ -343,7 +343,7 @@
     {
       "name": "MIKY",
       "projection": 277.9,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Leon Draisaitl",
@@ -382,10 +382,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Jared McCann",
-          "playerId": 8477955,
-          "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "player": "Sam Bennett",
+          "playerId": 8477935,
+          "bankedGoals": 3,
+          "goalsAtAcquisition": 5
         },
         {
           "player": "Roman Kantserov",

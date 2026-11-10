@@ -231,6 +231,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 17
+    },
+    {
+      "date": "2026-11-10",
+      "timestamp": "2026-11-10T11:39:18.402689+00:00",
+      "manager": "MIKY",
+      "outPlayer": "Jared McCann",
+      "outPlayerId": 8477955,
+      "inPlayer": "Sam Bennett",
+      "inPlayerId": 8477935,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 3,
+      "outSeasonGoalsAtTrade": 3,
+      "incomingGoalsAtAcquisition": 5,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 18
     }
   ]
 }
