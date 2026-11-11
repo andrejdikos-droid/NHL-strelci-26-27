@@ -249,6 +249,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 18
+    },
+    {
+      "date": "2026-11-11",
+      "timestamp": "2026-11-11T19:17:55.552272+00:00",
+      "manager": "DOBRAK",
+      "outPlayer": "Cale Makar",
+      "outPlayerId": 8480069,
+      "inPlayer": "Kevin Fiala",
+      "inPlayerId": 8477942,
+      "countedTrade": true,
+      "tradeNumber": 3,
+      "bankedGoals": 5,
+      "outSeasonGoalsAtTrade": 5,
+      "incomingGoalsAtAcquisition": 0,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 19
     }
   ]
 }

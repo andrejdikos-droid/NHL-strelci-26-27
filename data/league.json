@@ -398,7 +398,7 @@
     {
       "name": "DOBRAK",
       "projection": 258.5,
-      "tradesUsed": 2,
+      "tradesUsed": 3,
       "roster": [
         {
           "player": "Macklin Celebrini",
@@ -437,9 +437,9 @@
           "goalsAtAcquisition": 2
         },
         {
-          "player": "Cale Makar",
-          "playerId": 8480069,
-          "bankedGoals": 0,
+          "player": "Kevin Fiala",
+          "playerId": 8477942,
+          "bankedGoals": 5,
           "goalsAtAcquisition": 0
         },
         {
