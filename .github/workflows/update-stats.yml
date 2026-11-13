@@ -2,9 +2,14 @@ name: Update NHL stats
 
 on:
   schedule:
-    - cron: "15 7 * * *"
-    - cron: "15 8 * * *"
+    # Daily updates in UTC.
+    # Slovakia winter: 08:23, 09:23, 10:23, 12:23, 16:23.
+    # Slovakia summer: 09:23, 10:23, 11:23, 13:23, 17:23.
+    - cron: "23 7,8,9,11,15 * * *"
+
+    # Weekly full rebuild on Sunday.
     - cron: "30 11 * * 0"
+
   workflow_dispatch:
     inputs:
       full_rebuild:
