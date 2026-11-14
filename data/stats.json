@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-11-14T17:58:18.538269+00:00",
+  "updatedAt": "2026-11-14T19:59:31.447707+00:00",
   "source": "NHL Gamecenter boxscores · per-game ledger · playerId locked",
   "nightGameDate": "2026-11-13",
   "players": {
@@ -55,7 +55,7 @@
     },
     "Andrei Svechnikov": {
       "playerId": 8480830,
-      "goals": 9,
+      "goals": 11,
       "gamesPlayed": 20,
       "team": "CAR",
       "shots": 59,
@@ -1063,7 +1063,7 @@
     }
   },
   "managerTotals": {
-    "DIKSO": 63,
+    "DIKSO": 65,
     "PALI": 55,
     "ANDROS": 66,
     "DOMCO": 56,
@@ -1094,7 +1094,7 @@
       "8477933": 11,
       "8479542": 13,
       "8484153": 6,
-      "8480830": 9,
+      "8480830": 11,
       "8478042": 2,
       "8476483": 6,
       "8478493": 5
@@ -1206,10 +1206,18 @@
     }
   },
   "audit": {
-    "ledgerGames": 311,
-    "refreshedGamesThisRun": 95,
-    "summaryDiscrepancies": [],
-    "summaryDiscrepancyCount": 0,
+    "ledgerGames": 312,
+    "refreshedGamesThisRun": 96,
+    "summaryDiscrepancies": [
+      {
+        "player": "Andrei Svechnikov",
+        "playerId": 8480830,
+        "ledgerGoals": 11,
+        "summaryGoals": 9,
+        "difference": 2
+      }
+    ],
+    "summaryDiscrepancyCount": 1,
     "mode": "incremental",
     "recheckDays": 14,
     "accountingRepairs": [],
