@@ -453,7 +453,7 @@
     {
       "name": "ZELKIS",
       "projection": 269.3,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Jason Robertson",
@@ -468,10 +468,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Brayden Point",
-          "playerId": 8478010,
-          "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "player": "Jack Quinn",
+          "playerId": 8482097,
+          "bankedGoals": 5,
+          "goalsAtAcquisition": 9
         },
         {
           "player": "Adrian Kempe",

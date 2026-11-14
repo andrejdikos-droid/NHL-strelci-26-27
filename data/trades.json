@@ -267,6 +267,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 19
+    },
+    {
+      "date": "2026-11-14",
+      "timestamp": "2026-11-14T17:58:03.610501+00:00",
+      "manager": "ZELKIS",
+      "outPlayer": "Brayden Point",
+      "outPlayerId": 8478010,
+      "inPlayer": "Jack Quinn",
+      "inPlayerId": 8482097,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 5,
+      "outSeasonGoalsAtTrade": 5,
+      "incomingGoalsAtAcquisition": 9,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 20
     }
   ]
 }
