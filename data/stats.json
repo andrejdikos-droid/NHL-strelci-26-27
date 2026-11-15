@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-11-15T14:53:35.129494+00:00",
+  "updatedAt": "2026-11-15T17:56:33.417392+00:00",
   "source": "NHL Gamecenter boxscores · per-game ledger · playerId locked",
   "nightGameDate": "2026-11-14",
   "players": {
@@ -862,8 +862,8 @@
       "goals": 5,
       "gamesPlayed": 18,
       "team": "CBJ",
-      "shots": 52,
-      "shootingPct": 0.09615,
+      "shots": 53,
+      "shootingPct": 0.09433,
       "deltaGoals": 1,
       "summaryGoals": 5,
       "goalSource": "NHL gamecenter boxscores",
@@ -1242,10 +1242,10 @@
   },
   "audit": {
     "ledgerGames": 325,
-    "refreshedGamesThisRun": 99,
+    "refreshedGamesThisRun": 325,
     "summaryDiscrepancies": [],
     "summaryDiscrepancyCount": 0,
-    "mode": "incremental",
+    "mode": "full",
     "recheckDays": 14,
     "accountingRepairs": [],
     "accountingRepairCount": 0
