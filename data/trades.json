@@ -285,6 +285,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 20
+    },
+    {
+      "date": "2026-11-18",
+      "timestamp": "2026-11-18T20:23:09.063587+00:00",
+      "manager": "ANDROS",
+      "outPlayer": "Tom Wilson",
+      "outPlayerId": 8476880,
+      "inPlayer": "Brayden Point",
+      "inPlayerId": 8478010,
+      "countedTrade": true,
+      "tradeNumber": 1,
+      "bankedGoals": 2,
+      "outSeasonGoalsAtTrade": 2,
+      "incomingGoalsAtAcquisition": 5,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 21
     }
   ]
 }

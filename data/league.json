@@ -123,7 +123,7 @@
     {
       "name": "ANDROS",
       "projection": 277.3,
-      "tradesUsed": 0,
+      "tradesUsed": 1,
       "roster": [
         {
           "player": "Kirill Kaprizov",
@@ -168,10 +168,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Tom Wilson",
-          "playerId": 8476880,
-          "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "player": "Brayden Point",
+          "playerId": 8478010,
+          "bankedGoals": 2,
+          "goalsAtAcquisition": 5
         }
       ]
     },
