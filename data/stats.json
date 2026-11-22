@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-11-22T15:29:25.838331+00:00",
+  "updatedAt": "2026-11-22T18:37:29.733872+00:00",
   "source": "NHL Gamecenter boxscores · per-game ledger · playerId locked",
   "nightGameDate": "2026-11-21",
   "players": {
@@ -49,7 +49,7 @@
       "shots": 41,
       "shootingPct": 0.17073,
       "deltaGoals": 1,
-      "summaryGoals": 7,
+      "summaryGoals": null,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -499,7 +499,7 @@
     },
     "Mika Zibanejad": {
       "playerId": 8476459,
-      "goals": 5,
+      "goals": 6,
       "gamesPlayed": 22,
       "team": "NYR",
       "shots": 42,
@@ -529,7 +529,7 @@
       "shots": 58,
       "shootingPct": 0.12068,
       "deltaGoals": 0,
-      "summaryGoals": 7,
+      "summaryGoals": null,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -865,7 +865,7 @@
       "shots": 66,
       "shootingPct": 0.10606,
       "deltaGoals": 1,
-      "summaryGoals": 7,
+      "summaryGoals": null,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -1068,7 +1068,7 @@
     "ANDROS": 72,
     "DOMCO": 64,
     "IGOR": 70,
-    "MISO": 63,
+    "MISO": 64,
     "MIKY": 100,
     "DOBRAK": 49,
     "ZELKIS": 69,
@@ -1141,7 +1141,7 @@
     },
     "MISO": {
       "8476453": 9,
-      "8476459": 5,
+      "8476459": 6,
       "8476887": 9,
       "8479314": 7,
       "8480018": 9,
@@ -1245,11 +1245,11 @@
     }
   },
   "audit": {
-    "ledgerGames": 372,
-    "refreshedGamesThisRun": 96,
+    "ledgerGames": 373,
+    "refreshedGamesThisRun": 373,
     "summaryDiscrepancies": [],
     "summaryDiscrepancyCount": 0,
-    "mode": "incremental",
+    "mode": "full",
     "recheckDays": 14,
     "accountingRepairs": [],
     "accountingRepairCount": 0
