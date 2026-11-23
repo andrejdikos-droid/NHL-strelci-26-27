@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-11-23T06:50:39.675318+00:00",
+  "updatedAt": "2026-11-23T19:23:04.744800+00:00",
   "source": "NHL Gamecenter boxscores · per-game ledger · playerId locked",
   "nightGameDate": "2026-11-22",
   "players": {
@@ -865,7 +865,7 @@
       "shots": 66,
       "shootingPct": 0.10606,
       "deltaGoals": 0,
-      "summaryGoals": 7,
+      "summaryGoals": null,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -949,7 +949,7 @@
       "shots": 44,
       "shootingPct": 0.15909,
       "deltaGoals": 0,
-      "summaryGoals": null,
+      "summaryGoals": 7,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
