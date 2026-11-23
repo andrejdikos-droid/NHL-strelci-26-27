@@ -303,6 +303,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 21
+    },
+    {
+      "date": "2026-11-23",
+      "timestamp": "2026-11-23T06:50:37.375756+00:00",
+      "manager": "MIKY",
+      "outPlayer": "Sam Bennett",
+      "outPlayerId": 8477935,
+      "inPlayer": "Dylan Larkin",
+      "inPlayerId": 8477946,
+      "countedTrade": true,
+      "tradeNumber": 2,
+      "bankedGoals": 8,
+      "outSeasonGoalsAtTrade": 10,
+      "incomingGoalsAtAcquisition": 2,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 22
     }
   ]
 }
