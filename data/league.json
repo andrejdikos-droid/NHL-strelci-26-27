@@ -508,7 +508,7 @@
     {
       "name": "ONDRO",
       "projection": 257.0,
-      "tradesUsed": 1,
+      "tradesUsed": 2,
       "roster": [
         {
           "player": "David Pastrnak",
@@ -547,10 +547,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Connor Bedard",
-          "playerId": 8484144,
-          "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "player": "Matthew Knies",
+          "playerId": 8482720,
+          "bankedGoals": 7,
+          "goalsAtAcquisition": 6
         },
         {
           "player": "Beckett Sennecke",

@@ -321,6 +321,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 22
+    },
+    {
+      "date": "2026-11-24",
+      "timestamp": "2026-11-24T05:50:30.332005+00:00",
+      "manager": "ONDRO",
+      "outPlayer": "Connor Bedard",
+      "outPlayerId": 8484144,
+      "inPlayer": "Matthew Knies",
+      "inPlayerId": 8482720,
+      "countedTrade": true,
+      "tradeNumber": 2,
+      "bankedGoals": 7,
+      "outSeasonGoalsAtTrade": 7,
+      "incomingGoalsAtAcquisition": 6,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 23
     }
   ]
 }
