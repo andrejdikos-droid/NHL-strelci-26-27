@@ -453,7 +453,7 @@
     {
       "name": "ZELKIS",
       "projection": 269.3,
-      "tradesUsed": 1,
+      "tradesUsed": 2,
       "roster": [
         {
           "player": "Jason Robertson",
@@ -474,10 +474,10 @@
           "goalsAtAcquisition": 9
         },
         {
-          "player": "Adrian Kempe",
-          "playerId": 8477960,
-          "bankedGoals": 0,
-          "goalsAtAcquisition": 0
+          "player": "Frank Nazar",
+          "playerId": 8483493,
+          "bankedGoals": 6,
+          "goalsAtAcquisition": 12
         },
         {
           "player": "Sidney Crosby",

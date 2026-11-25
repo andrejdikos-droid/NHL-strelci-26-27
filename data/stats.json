@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-11-25T18:04:10.443015+00:00",
+  "updatedAt": "2026-11-25T19:47:37.838740+00:00",
   "source": "NHL Gamecenter boxscores · per-game ledger · playerId locked",
   "nightGameDate": "2026-11-24",
   "players": {
@@ -49,7 +49,7 @@
       "shots": 41,
       "shootingPct": 0.17073,
       "deltaGoals": 0,
-      "summaryGoals": null,
+      "summaryGoals": 7,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -809,15 +809,15 @@
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
-    "Adrian Kempe": {
-      "playerId": 8477960,
-      "goals": 6,
-      "gamesPlayed": 18,
-      "team": "LAK",
-      "shots": 56,
-      "shootingPct": 0.10714,
+    "Frank Nazar": {
+      "playerId": 8483493,
+      "goals": 12,
+      "gamesPlayed": 22,
+      "team": "CHI",
+      "shots": 47,
+      "shootingPct": 0.25531,
       "deltaGoals": 0,
-      "summaryGoals": null,
+      "summaryGoals": 12,
       "goalSource": "NHL gamecenter boxscores",
       "found": true
     },
@@ -1173,7 +1173,7 @@
       "8480027": 10,
       "8481557": 14,
       "8482097": 9,
-      "8477960": 6,
+      "8483493": 6,
       "8471675": 6,
       "8480208": 12,
       "8482175": 6,

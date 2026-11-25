@@ -339,6 +339,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 23
+    },
+    {
+      "date": "2026-11-25",
+      "timestamp": "2026-11-25T19:47:19.509524+00:00",
+      "manager": "ZELKIS",
+      "outPlayer": "Adrian Kempe",
+      "outPlayerId": 8477960,
+      "inPlayer": "Frank Nazar",
+      "inPlayerId": 8483493,
+      "countedTrade": true,
+      "tradeNumber": 2,
+      "bankedGoals": 6,
+      "outSeasonGoalsAtTrade": 6,
+      "incomingGoalsAtAcquisition": 12,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 24
     }
   ]
 }
