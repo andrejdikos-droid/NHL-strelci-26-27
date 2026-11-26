@@ -1,7 +1,7 @@
 {
   "season": "20262027",
   "gameTypeId": 2,
-  "updatedAt": "2026-11-26T06:27:22.549984+00:00",
+  "updatedAt": "2026-11-26T17:48:45.753846+00:00",
   "source": "NHL Gamecenter boxscores · per-game ledger · playerId locked",
   "nightGameDate": "2026-11-25",
   "players": {
@@ -334,8 +334,8 @@
       "goals": 13,
       "gamesPlayed": 23,
       "team": "UTA",
-      "shots": 37,
-      "shootingPct": 0.35135,
+      "shots": 38,
+      "shootingPct": 0.3421,
       "deltaGoals": 1,
       "summaryGoals": 13,
       "goalSource": "NHL gamecenter boxscores",
