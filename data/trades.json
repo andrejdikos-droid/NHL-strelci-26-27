@@ -357,6 +357,24 @@
       "type": "regular_trade",
       "note": "",
       "githubIssue": 24
+    },
+    {
+      "date": "2026-11-26",
+      "timestamp": "2026-11-26T06:27:08.520170+00:00",
+      "manager": "DIKSO",
+      "outPlayer": "Viktor Arvidsson",
+      "outPlayerId": 8478042,
+      "inPlayer": "Adrian Kempe",
+      "inPlayerId": 8477960,
+      "countedTrade": true,
+      "tradeNumber": 3,
+      "bankedGoals": 3,
+      "outSeasonGoalsAtTrade": 9,
+      "incomingGoalsAtAcquisition": 6,
+      "goalSource": "NHL Gamecenter boxscore ledger",
+      "type": "regular_trade",
+      "note": "",
+      "githubIssue": 25
     }
   ]
 }

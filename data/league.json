@@ -13,7 +13,7 @@
     {
       "name": "DIKSO",
       "projection": 297.8,
-      "tradesUsed": 2,
+      "tradesUsed": 3,
       "roster": [
         {
           "player": "Connor McDavid",
@@ -46,10 +46,10 @@
           "goalsAtAcquisition": 0
         },
         {
-          "player": "Viktor Arvidsson",
-          "playerId": 8478042,
-          "bankedGoals": 2,
-          "goalsAtAcquisition": 8
+          "player": "Adrian Kempe",
+          "playerId": 8477960,
+          "bankedGoals": 3,
+          "goalsAtAcquisition": 6
         },
         {
           "player": "Rickard Rakell",
